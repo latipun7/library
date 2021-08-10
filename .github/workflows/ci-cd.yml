@@ -1,0 +1,104 @@
+# GitHub Actions References:
+# https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
+
+name: Continuous Integration and Continuous Delivery ⚙🚀
+
+on:
+  push:
+    branches: [main, next, beta, alpha]
+
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test_build:
+    name: Test and Build ⚙⚛
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16.x, "lts/*"]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.4
+
+      - name: Use NodeJS ${{ matrix.node }} 📦
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+          cache-dependency-path: "**/yarn.lock"
+
+      - name: Install Dependencies ✨
+        run: yarn --immutable --check-cache
+
+      - name: Run Linter 👨🏻‍💻
+        run: yarn lint
+
+      - name: Run Formatter 💅
+        run: yarn format
+
+      - name: Run Tests 🧪
+        run: yarn test
+
+      - name: Run Build 🛠
+        run: yarn build
+
+      - name: Cache dist Directory for Publish 🚀
+        uses: actions/cache@v2.1.6
+        with:
+          path: |
+            **/dist/**/*
+          key: ${{ github.sha }}-${{ runner.os }}-${{ matrix.node }}
+
+  release:
+    name: Release ✨🚀
+    needs: test_build
+    if: github.event_name == 'push'
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: ["lts/*"]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.4
+        with:
+          fetch-depth: 0
+
+      - name: Use NodeJS LTS 📦
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+          cache-dependency-path: "**/yarn.lock"
+
+      - name: Restore dist Directory for Publish 🚀
+        id: restore-dist
+        uses: actions/cache@v2.1.6
+        with:
+          path: |
+            **/dist/**/*
+          key: ${{ github.sha }}-${{ runner.os }}-${{ matrix.node }}
+
+      - name: Install Dependencies ✨
+        if: steps.restore-dist.outputs.cache-hit != 'true'
+        run: |
+          yarn --immutable --check-cache
+          yarn build
+
+      - name: Release 🚀
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GIT_AUTHOR_NAME: latipun7
+          GIT_AUTHOR_EMAIL: latifsulistyo.me@gmail.com
+          GIT_COMMITTER_NAME: latipun7
+          GIT_COMMITTER_EMAIL: latifsulistyo.me@gmail.com
+        run: yarn release

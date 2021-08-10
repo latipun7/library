@@ -1,0 +1,73 @@
+{
+  "name": "library",
+  "description": "Nerdy Ninja's library 🐱‍👤📜",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/latipun7/library#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latipun7/library.git"
+  },
+  "author": {
+    "name": "Latif Sulistyo",
+    "email": "latifsulistyo.me@gmail.com"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.8.0"
+  },
+  "packageManager": "yarn@3.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "cm": "cz",
+    "lint": "eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx .",
+    "format": "prettier --check .",
+    "test": "echo 'not yet implemented'",
+    "build": "yarn workspaces foreach -vpt --jobs 7 run build",
+    "release": "yarn workspaces foreach -vpt --jobs 7 run semantic-release",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/cz-commitlint": "^13.1.0",
+    "@types/semantic-release": "^17.2.1",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.32.0",
+    "eslint-config-ruppy-jest": "^2.0.0",
+    "eslint-config-ruppy-node": "^2.1.1",
+    "eslint-config-ruppy-react": "^2.0.2",
+    "eslint-config-ruppy-ts": "^2.0.0",
+    "husky": "^7.0.1",
+    "inquirer": "^8.1.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.4",
+    "semantic-release-monorepo": "^7.0.5",
+    "typescript": "^4.3.5"
+  },
+  "lint-staged": {
+    "**/*.{js,cjs,mjs,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "commitlint": {
+    "extends": [
+      "@latipun/commitlintrc"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "release": {
+    "extends": [
+      "semantic-release-monorepo",
+      "@latipun/releaserc/monorepo"
+    ]
+  }
+}
