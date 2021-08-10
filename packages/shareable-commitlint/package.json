@@ -1,0 +1,67 @@
+{
+  "name": "@latipun/commitlintrc",
+  "version": "0.0.0",
+  "description": "Nerdy Ninja's shareable Commitlint configuration 🐱‍👤🚀",
+  "license": "MIT",
+  "homepage": "https://github.com/latipun7/library/tree/main/packages/shareable-commitlint#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latipun7/library.git",
+    "directory": "packages/shareable-commitlint"
+  },
+  "author": {
+    "name": "Latif Sulistyo",
+    "email": "latifsulistyo.me@gmail.com"
+  },
+  "type": "commonjs",
+  "engines": {
+    "node": ">=14.8.0"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "latipun",
+    "commitlint",
+    "commitizen",
+    "conventional-commits",
+    "conventionalcommits",
+    "config",
+    "configuration",
+    "shareable"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.6.0"
+  },
+  "devDependencies": {
+    "@commitlint/types": "^13.1.0"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "*",
+    "@commitlint/cz-commitlint": "*",
+    "commitizen": "*",
+    "inquirer": "*"
+  },
+  "peerDependenciesMeta": {
+    "@commitlint/cz-commitlint": {
+      "optional": true
+    },
+    "commitizen": {
+      "optional": true
+    },
+    "inquirer": {
+      "optional": true
+    }
+  }
+}

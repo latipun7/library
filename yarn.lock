@@ -79,15 +79,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:^13.1.0":
-  version: 13.1.0
-  resolution: "@commitlint/config-conventional@npm:13.1.0"
-  dependencies:
-    conventional-changelog-conventionalcommits: ^4.3.1
-  checksum: c3c5313efa8eb57fa8456537de812cbfcf3406dde7911184dc047c5ed3979788c69f504a31feb0880cf70f1138311a3d52423822e4818783450934a7c5f8fef8
-  languageName: node
-  linkType: hard
-
 "@commitlint/cz-commitlint@npm:^13.1.0":
   version: 13.1.0
   resolution: "@commitlint/cz-commitlint@npm:13.1.0"
@@ -287,8 +278,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@latipun/commitlintrc@workspace:packages/shareable-commitlint"
   dependencies:
-    "@commitlint/config-conventional": ^13.1.0
     "@commitlint/types": ^13.1.0
+    conventional-changelog-conventionalcommits: ^4.6.0
   peerDependencies:
     "@commitlint/cli": "*"
     "@commitlint/cz-commitlint": "*"
@@ -1844,7 +1835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.3.1, conventional-changelog-conventionalcommits@npm:^4.6.0":
+"conventional-changelog-conventionalcommits@npm:^4.6.0":
   version: 4.6.0
   resolution: "conventional-changelog-conventionalcommits@npm:4.6.0"
   dependencies:
