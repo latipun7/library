@@ -88,10 +88,7 @@ jobs:
           key: ${{ github.sha }}-${{ runner.os }}-${{ matrix.node }}
 
       - name: Install Dependencies ✨
-        if: steps.restore-dist.outputs.cache-hit != 'true'
-        run: |
-          yarn --immutable --check-cache
-          yarn build
+        run: yarn --immutable --check-cache
 
       - name: Release 🚀
         env:
