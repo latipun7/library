@@ -1,0 +1,7 @@
+{
+  "extends": "@latipun/tsconfig/cjs",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "outDir": "dist"
+  }
+}
