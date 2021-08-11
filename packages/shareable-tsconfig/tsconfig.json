@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "resolveJsonModule": false, // Node ESM doesn't suppport JSON Modules yet
+
+    "noEmitOnError": true,
+
+    "newLine": "lf",
+    "removeComments": true,
+    "sourceMap": true,
+
+    "checkJs": true,
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    "lib": ["ES2020"],
+    "target": "ES2020", // Targeting node 14
+
+    "skipLibCheck": true
+  }
+}

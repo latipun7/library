@@ -1,0 +1,48 @@
+{
+  "name": "@latipun/tsconfig",
+  "version": "0.0.0",
+  "description": "Nerdy Ninja's shareable TypeScript configuration 🐱‍👤🎯",
+  "license": "MIT",
+  "homepage": "https://github.com/latipun7/library/tree/main/packages/shareable-tsconfig#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latipun7/library.git",
+    "directory": "packages/shareable-tsconfig"
+  },
+  "author": {
+    "name": "Latif Sulistyo",
+    "email": "latifsulistyo.me@gmail.com"
+  },
+  "engines": {
+    "node": ">=14.8.0"
+  },
+  "exports": {
+    ".": "./esm.json",
+    "./esm": "./esm.json",
+    "./cjs": "./cjs.json",
+    "./next": "./next.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "*.json"
+  ],
+  "keywords": [
+    "latipun",
+    "tsconfig",
+    "tsconfig.json",
+    "typescript",
+    "ts",
+    "config",
+    "configuration",
+    "shareable"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  }
+}
