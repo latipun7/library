@@ -1,5 +1,121 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Nerdy Ninja's default renovate preset 🐱‍👤🌅",
 
-  "extends": ["github>latipun7/library//.github/default"]
+  "extends": [
+    "config:base",
+    ":rebaseStalePrs",
+    ":prHourlyLimitNone",
+    ":semanticCommits",
+    ":timezone(Asia/Jakarta)"
+  ],
+
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "**/dist/**",
+    "**/out/**"
+  ],
+
+  "prConcurrentLimit": 7,
+  "rangeStrategy": "bump",
+  "labels": ["dependencies"],
+
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security", "dependencies"],
+    "semanticCommitType": "security",
+    "semanticCommitScope": "deps-tree"
+  },
+
+  "regexManagers": [
+    {
+      "description": "Add manager for updating yarn berry with default rcFilename",
+      "fileMatch": ["^\\.yarnrc\\.yml"],
+      "matchStrings": ["yarnPath:.*-(?<currentValue>.*)\\.[cm]?js"],
+      "depNameTemplate": "yarn",
+      "lookupNameTemplate": "@yarnpkg/cli",
+      "datasourceTemplate": "npm",
+      "versioningTemplate": "semver"
+    }
+  ],
+
+  "packageRules": [
+    {
+      "description": "Run commands before commiting custom regexManager",
+      "matchManagers": ["regex"],
+      "matchPackageNames": ["yarn"],
+      "postUpgradeTasks": {
+        "commands": ["yarn set version {{{newVersion}}}"],
+        "fileFilters": ["**/*"]
+      },
+      "semanticCommitType": "build",
+      "semanticCommitScope": "yarn"
+    },
+    {
+      "description": "Github Actions commits and 'v' prefix workaround",
+      "matchDepTypes": ["action"],
+      "extractVersion": "^(?<version>v\\d+\\.\\d+\\.\\d+)$",
+      "versioning": "regex:^v(?<major>\\d+)(\\.(?<minor>\\d+)\\.(?<patch>\\d+))?$",
+      "labels": ["dependencies", "github-actions"],
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "actions"
+    },
+    {
+      "description": "Group prettier packages",
+      "matchPackageNames": ["prettier"],
+      "matchPackagePatterns": [
+        "^@prettier\\/",
+        "^prettier-(?:plugin|config)-",
+        "^@.+\\/.*prettier"
+      ],
+      "groupName": "prettier packages"
+    },
+    {
+      "description": "Group eslint packages",
+      "matchPackageNames": ["eslint"],
+      "matchPackagePatterns": [
+        "^@eslint\\/",
+        "^eslint-(?:plugin|config)-",
+        "^@.+\\/.*eslint"
+      ],
+      "groupName": "eslint packages"
+    },
+    {
+      "description": "Group latipun's packages",
+      "matchPackagePatterns": ["^@latipun7?\\/", "latipun"],
+      "groupName": "latipun's packages"
+    },
+    {
+      "description": "NPM dependencies label and commits",
+      "matchDepTypes": ["dependencies"],
+      "labels": ["dependencies", "javascript"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
+    },
+    {
+      "description": "NPM devDependencies label and commits",
+      "matchDepTypes": ["devDependencies"],
+      "labels": ["dependencies", "javascript"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps-dev"
+    },
+    {
+      "description": "Auto merge definitely-typed packages",
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true,
+      "automergeStrategy": "squash"
+    },
+    {
+      "description": "Disable bump on package.json engines",
+      "matchDepTypes": ["engines"],
+      "enabled": false
+    }
+  ]
 }
