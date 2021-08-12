@@ -274,9 +274,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@latipun/commitlintrc@workspace:packages/shareable-commitlint":
+"@latipun7/commitlintrc@workspace:packages/shareable-commitlint":
   version: 0.0.0-use.local
-  resolution: "@latipun/commitlintrc@workspace:packages/shareable-commitlint"
+  resolution: "@latipun7/commitlintrc@workspace:packages/shareable-commitlint"
   dependencies:
     "@commitlint/types": ^13.1.0
     conventional-changelog-conventionalcommits: ^4.6.0
@@ -295,9 +295,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@latipun/releaserc@workspace:packages/shareable-release":
+"@latipun7/releaserc@workspace:packages/shareable-release":
   version: 0.0.0-use.local
-  resolution: "@latipun/releaserc@workspace:packages/shareable-release"
+  resolution: "@latipun7/releaserc@workspace:packages/shareable-release"
   dependencies:
     "@semantic-release/changelog": ^5.0.1
     "@semantic-release/git": ^9.0.0
@@ -313,9 +313,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@latipun/tsconfig@workspace:packages/shareable-tsconfig":
+"@latipun7/tsconfig@workspace:packages/shareable-tsconfig":
   version: 0.0.0-use.local
-  resolution: "@latipun/tsconfig@workspace:packages/shareable-tsconfig"
+  resolution: "@latipun7/tsconfig@workspace:packages/shareable-tsconfig"
   peerDependencies:
     typescript: "*"
   languageName: unknown

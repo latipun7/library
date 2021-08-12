@@ -1,4 +1,4 @@
-# `@latipun/releaserc 🐱‍👤🚀`
+# `@latipun7/releaserc 🐱‍👤🚀`
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
@@ -19,14 +19,14 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
 - Standard repository
 
   ```sh
-  yarn add -D @latipun/releaserc semantic-release
+  yarn add -D @latipun7/releaserc semantic-release
   ```
 
   ```json
   // package.json
   "release": {
     "extends": [
-      "@latipun/releaserc"
+      "@latipun7/releaserc"
     ]
   }
   ```
@@ -34,7 +34,7 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
 - Monorepo
 
   ```sh
-  yarn add -D @latipun/releaserc semantic-release semantic-release-monorepo
+  yarn add -D @latipun7/releaserc semantic-release semantic-release-monorepo
   ```
 
   ```json
@@ -42,7 +42,7 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
   "release": {
     "extends": [
       "semantic-release-monorepo",
-      "@latipun/releaserc/monorepo"
+      "@latipun7/releaserc/monorepo"
     ]
   }
   ```
@@ -59,6 +59,6 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
 [discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
 [workflow-image]: https://img.shields.io/github/workflow/status/latipun7/library/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
 [workflow-url]: https://github.com/latipun7/library/actions "GitHub Actions"
-[npm-image]: https://img.shields.io/npm/v/@latipun/releaserc?label=package&logo=npm&style=flat-square
-[npm-url]: https://npmjs.org/package/@latipun/releaserc "@latipun/releaserc on NPM"
+[npm-image]: https://img.shields.io/npm/v/@latipun7/releaserc?label=package&logo=npm&style=flat-square
+[npm-url]: https://npmjs.org/package/@latipun7/releaserc "@latipun7/releaserc on NPM"
 [license-url]: https://github.com/latipun7/library/blob/main/license "MIT License"

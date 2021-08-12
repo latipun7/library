@@ -26,7 +26,7 @@
     "format": "prettier --check .",
     "test": "echo 'not yet implemented'",
     "build": "yarn workspaces foreach -vpt --jobs 7 run build",
-    "release": "yarn workspaces foreach -vpt --jobs 7 run semantic-release",
+    "release": "yarn workspaces foreach -vt --no-private run semantic-release",
     "postinstall": "husky install"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
   },
   "commitlint": {
     "extends": [
-      "@latipun/commitlintrc"
+      "@latipun7/commitlintrc"
     ]
   },
   "config": {
@@ -67,7 +67,7 @@
   "release": {
     "extends": [
       "semantic-release-monorepo",
-      "@latipun/releaserc/monorepo"
+      "@latipun7/releaserc/monorepo"
     ]
   }
 }

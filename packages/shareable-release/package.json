@@ -1,5 +1,5 @@
 {
-  "name": "@latipun/releaserc",
+  "name": "@latipun7/releaserc",
   "version": "0.0.0",
   "description": "Nerdy Ninja's shareable Semantic Release configuration 🐱‍👤🚀",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "templates"
   ],
   "keywords": [
-    "latipun",
     "semantic-release",
     "semver",
     "semantic",

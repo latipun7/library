@@ -1,5 +1,5 @@
 {
-  "name": "@latipun/tsconfig",
+  "name": "@latipun7/tsconfig",
   "version": "0.0.0",
   "description": "Nerdy Ninja's shareable TypeScript configuration 🐱‍👤🎯",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "*.json"
   ],
   "keywords": [
-    "latipun",
     "tsconfig",
     "tsconfig.json",
     "typescript",

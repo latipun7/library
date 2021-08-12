@@ -1,5 +1,5 @@
 {
-  "extends": "@latipun/tsconfig/esm",
+  "extends": "@latipun7/tsconfig/esm",
   "include": ["packages/**/*", "**/*.config.ts"],
   "exclude": ["**/node_modules", "**/dist"]
 }

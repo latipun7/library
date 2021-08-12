@@ -22,5 +22,5 @@ This monorepo contains all my personal library that contains shareable configura
 [discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
 [workflow-image]: https://img.shields.io/github/workflow/status/latipun7/library/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
 [workflow-url]: https://github.com/latipun7/library/actions "GitHub Actions"
-[npm-image]: https://img.shields.io/badge/NPM-latipun-blue?style=flat-square&logo=npm
-[npm-url]: https://www.npmjs.com/search?q=keywords:latipun "latipun packages on NPM"
+[npm-image]: https://img.shields.io/badge/NPM-latipun7-blue?style=flat-square&logo=npm
+[npm-url]: https://www.npmjs.com/~latipun7 "latipun's packages on NPM"
