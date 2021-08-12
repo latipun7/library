@@ -8,6 +8,8 @@
 >
 > Nerdy Ninja's shareable TypeScript [configuration](https://www.typescriptlang.org/tsconfig/) 🐱‍👤🎯
 
+## Getting Started
+
 ```sh
 yarn add -D @latipun7/tsconfig typescript
 ```
@@ -48,11 +50,9 @@ yarn add -D @latipun7/tsconfig typescript
   }
   ```
 
-## License
+## Hacking to the Gate~! 🐱‍💻🎶
 
-[MIT] © Latif Sulistyo
-
-### Hacking to the Gate~! 🐱‍💻🎶
+[MIT License][license-url] © Latif Sulistyo
 
 <!-- Variables -->
 
@@ -62,4 +62,4 @@ yarn add -D @latipun7/tsconfig typescript
 [workflow-url]: https://github.com/latipun7/library/actions "GitHub Actions"
 [npm-image]: https://img.shields.io/npm/v/@latipun7/tsconfig?label=package&logo=npm&style=flat-square
 [npm-url]: https://npmjs.org/package/@latipun7/tsconfig "@latipun7/tsconfig on NPM"
-[mit]: https://github.com/latipun7/library/blob/main/license "MIT License"
+[license-url]: https://github.com/latipun7/library/blob/main/license "MIT License"

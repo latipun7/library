@@ -4,17 +4,35 @@
 [![GitHub Workflow Status][workflow-image]][workflow-url]
 [![NPM Package][npm-image]][npm-url]
 
-> Nerdy Ninja's library 🐱‍👤📜
+> **Nerdy Ninja's library 🐱‍👤📜**
+>
+> This monorepo contains all my personal library that contains shareable configurations, code utilities, modules, ui components, and more to come ...
 
-## About
+## Currently This Library Contains
 
-This monorepo contains all my personal library that contains shareable configurations, code utilities, modules, ui components, and more to come ...
+- [Shareable `renovate` configuration preset](./.github/renovate.json).
+  How to use this config in other repository (your repo):
 
-## License
+  - Create `renovate.json` or `.github/renovate.json` relative to the root repository
+  - Place this inside the file:
 
-[MIT](./license) © Latif Sulistyo
+    ```json
+    {
+      "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-### Hacking to the Gate~! 🐱‍💻🎶
+      "extends": ["github>latipun7/library//.github/renovate"]
+    }
+    ```
+
+  - Done.
+
+- [Shareable `commitlint` configuration](./packages/shareable-commitlint)
+- [Shareable `semantic-release` configuration](./packages/shareable-release)
+- [Shareable `typescript` configuration](./packages/shareable-tsconfig)
+
+## Hacking to the Gate~! 🐱‍💻🎶
+
+[MIT License](./license) © Latif Sulistyo
 
 <!-- Variables -->
 

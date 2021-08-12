@@ -47,11 +47,9 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
   }
   ```
 
-## License
+## Hacking to the Gate~! 🐱‍💻🎶
 
-[MIT][license-url] © Latif Sulistyo
-
-### Hacking to the Gate~! 🐱‍💻🎶
+[MIT License][license-url] © Latif Sulistyo
 
 <!-- Variables -->
 

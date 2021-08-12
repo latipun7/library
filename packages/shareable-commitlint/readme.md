@@ -34,11 +34,9 @@ Use with [@commitlint/cli](https://npm.im/@commitlint/cli) and [commitizen](http
   yarn cz
   ```
 
-## License
+## Hacking to the Gate~! 🐱‍💻🎶
 
-[MIT][license-url] © Latif Sulistyo
-
-### Hacking to the Gate~! 🐱‍💻🎶
+[MIT License][license-url] © Latif Sulistyo
 
 <!-- Variables -->
 
