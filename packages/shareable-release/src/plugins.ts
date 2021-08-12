@@ -106,7 +106,7 @@ const plugins: PluginSpec[] = [
     '@semantic-release/git',
     {
       message:
-        'chore(release): publish <%= nextRelease.gitTag %> 📦🚀\n\n[skip ci]\n\n<%= nextRelease.notes %>',
+        'chore(release): publish <%= nextRelease.gitTag %> 📦🚀\n\n[skip ci]',
       assets: [
         'changelog.md',
         'package.json',
