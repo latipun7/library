@@ -52,7 +52,7 @@
       "matchManagers": ["regex"],
       "matchPackageNames": ["yarn"],
       "postUpgradeTasks": {
-        "commands": ["yarn set version {{{newVersion}}}"],
+        "commands": ["yarn set version latest"],
         "fileFilters": ["**/*"]
       },
       "semanticCommitType": "build",
