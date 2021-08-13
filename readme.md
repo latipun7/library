@@ -20,7 +20,7 @@
     {
       "$schema": "https://docs.renovatebot.com/renovate-schema.json",
 
-      "extends": ["github>latipun7/library//.github/renovate"]
+      "extends": ["github>latipun7/library//.github"]
     }
     ```
 
