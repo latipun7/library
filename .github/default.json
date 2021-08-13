@@ -7,7 +7,9 @@
     ":rebaseStalePrs",
     ":prHourlyLimitNone",
     ":semanticCommits",
-    ":timezone(Asia/Jakarta)"
+    ":timezone(Asia/Jakarta)",
+
+    "github>whitesource/merge-confidence:beta"
   ],
 
   "ignorePaths": [
