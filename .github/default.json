@@ -26,6 +26,7 @@
   ],
 
   "prConcurrentLimit": 7,
+  "prCreation": "not-pending",
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
 
@@ -119,5 +120,19 @@
       "matchDepTypes": ["engines"],
       "enabled": false
     }
-  ]
+  ],
+
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateClosed": true,
+    "prCreation": "status-success",
+    "commitMessageAction": "Maintain lock-file",
+    "commitMessageTopic": "",
+    "commitMessageExtra": "",
+    "schedule": ["before 5am on monday"],
+    "groupName": "Lock File Maintenance",
+    "prBodyDefinitions": {
+      "Change": "All locks refreshed"
+    }
+  }
 }
