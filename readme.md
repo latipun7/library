@@ -24,9 +24,7 @@
     }
     ```
 
-  - Fork [this repo](https://github.com/latipun7/renovate-bot) and update the Repo Secret `RENOVATE_TOKEN` with your desired [Personal Access Token](https://github.com/settings/tokens).
-
-  - Update the `.github/renovate-bot-config.json` [settings](https://docs.renovatebot.com/self-hosted-configuration) to your needs.
+  - Install [Renovate official bot](https://github.com/marketplace/renovate) or feel free to use my [self-hosted renovate bot](https://github.com/apps/latipun-renovates).
 
   - Done.
 
