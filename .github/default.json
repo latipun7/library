@@ -7,6 +7,7 @@
     ":rebaseStalePrs",
     ":prHourlyLimitNone",
     ":semanticCommits",
+    ":dependencyDashboard",
     ":timezone(Asia/Jakarta)",
 
     "github>whitesource/merge-confidence:beta"
@@ -129,7 +130,7 @@
     "commitMessageAction": "Maintain lock-file",
     "commitMessageTopic": "",
     "commitMessageExtra": "",
-    "schedule": ["before 5am on monday"],
+    "schedule": ["before 9am on monday"],
     "groupName": "Lock File Maintenance",
     "prBodyDefinitions": {
       "Change": "All locks refreshed"
