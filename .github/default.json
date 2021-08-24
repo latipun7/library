@@ -55,7 +55,7 @@
 
   "regexManagers": [
     {
-      "description": "Add manager for updating yarn berry with default rcFilename",
+      "description": "Add manager for updating yarn berry",
       "fileMatch": ["^package\\.json"],
       "matchStrings": [
         "\"packageManager\":\\s*\"(?<depName>.*)@(?<currentValue>.*)\""
@@ -74,7 +74,7 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "yarn",
       "postUpgradeTasks": {
-        "commands": ["yarn set version {{{newVersion}}}"],
+        "commands": ["yarn set version {{{newValue}}}"],
         "fileFilters": ["**/*"],
         "executionMode": "branch"
       }
