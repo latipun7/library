@@ -30,7 +30,7 @@
   "prCreation": "immediate",
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
-  "commitMessageTopic": "`{{depName}}`",
+  "commitMessageTopic": "`{{{depName}}}`",
 
   "vulnerabilityAlerts": {
     "enabled": true,
@@ -56,9 +56,10 @@
   "regexManagers": [
     {
       "description": "Add manager for updating yarn berry with default rcFilename",
-      "fileMatch": ["^\\.yarnrc\\.yml"],
-      "matchStrings": ["yarnPath:.*-(?<currentValue>.*)\\.[cm]?js"],
-      "depNameTemplate": "yarn",
+      "fileMatch": ["^\\package\\.json"],
+      "matchStrings": [
+        "\"packageManager\":\\s*\"(?<depName>.*)@(?<currentValue>.*)\""
+      ],
       "lookupNameTemplate": "@yarnpkg/cli",
       "datasourceTemplate": "npm",
       "versioningTemplate": "semver"
