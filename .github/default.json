@@ -56,7 +56,7 @@
   "regexManagers": [
     {
       "description": "Add manager for updating yarn berry with default rcFilename",
-      "fileMatch": ["^\\package\\.json"],
+      "fileMatch": ["^package\\.json"],
       "matchStrings": [
         "\"packageManager\":\\s*\"(?<depName>.*)@(?<currentValue>.*)\""
       ],
