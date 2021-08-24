@@ -27,15 +27,30 @@
   ],
 
   "prConcurrentLimit": 7,
-  "prCreation": "not-pending",
+  "prCreation": "immediate",
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
+  "commitMessageTopic": "`{{depName}}`",
 
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security", "dependencies"],
     "semanticCommitType": "security",
     "semanticCommitScope": "deps-tree"
+  },
+
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateClosed": true,
+    "prCreation": "status-success",
+    "commitMessageAction": "Maintain",
+    "commitMessageTopic": "lock-file",
+    "commitMessageExtra": "",
+    "schedule": ["before 9am on monday"],
+    "groupName": "Lock File Maintenance",
+    "prBodyDefinitions": {
+      "Change": "All locks refreshed"
+    }
   },
 
   "regexManagers": [
@@ -55,12 +70,13 @@
       "description": "Run commands before commiting custom regexManager",
       "matchManagers": ["regex"],
       "matchPackageNames": ["yarn"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "yarn",
       "postUpgradeTasks": {
         "commands": ["yarn set version {{{newVersion}}}"],
-        "fileFilters": ["**/*"]
-      },
-      "semanticCommitType": "build",
-      "semanticCommitScope": "yarn"
+        "fileFilters": ["**/*"],
+        "executionMode": "branch"
+      }
     },
     {
       "description": "Github Actions commits and 'v' prefix workaround",
@@ -121,19 +137,5 @@
       "matchDepTypes": ["engines"],
       "enabled": false
     }
-  ],
-
-  "lockFileMaintenance": {
-    "enabled": true,
-    "recreateClosed": true,
-    "prCreation": "status-success",
-    "commitMessageAction": "Maintain lock-file",
-    "commitMessageTopic": "",
-    "commitMessageExtra": "",
-    "schedule": ["before 9am on monday"],
-    "groupName": "Lock File Maintenance",
-    "prBodyDefinitions": {
-      "Change": "All locks refreshed"
-    }
-  }
+  ]
 }
