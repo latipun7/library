@@ -32,6 +32,14 @@
   "labels": ["dependencies"],
   "commitMessageTopic": "`{{{depName}}}`",
 
+  "postUpgradeTasks": {
+    "commands": [
+      "git status -s | awk '($1 != \"D\"){print $2}' | xargs npx prettier --write --ignore-unknown"
+    ],
+    "fileFilters": ["**/**"],
+    "executionMode": "branch"
+  },
+
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security", "dependencies"],
@@ -74,8 +82,8 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "yarn",
       "postUpgradeTasks": {
-        "commands": ["yarn set version {{{newValue}}}"],
-        "fileFilters": ["**/*"],
+        "commands": ["yarn set version {{{newVersion}}}"],
+        "fileFilters": ["**/**"],
         "executionMode": "branch"
       }
     },
