@@ -82,7 +82,7 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "yarn",
       "postUpgradeTasks": {
-        "commands": ["{{{depName}}} set version {{{newVersion}}}"],
+        "commands": ["yarn set version {{{depName}}}{{{newVersion}}}"],
         "fileFilters": ["**/**"],
         "executionMode": "branch"
       }
