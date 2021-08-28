@@ -39,7 +39,7 @@
     "eslint-config-ruppy-node": "^2.1.1",
     "eslint-config-ruppy-react": "^2.0.2",
     "eslint-config-ruppy-ts": "^2.0.0",
-    "husky": "^7.0.1",
+    "husky": "^7.0.2",
     "inquirer": "^8.1.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
