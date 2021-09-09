@@ -45,7 +45,7 @@
   "dependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.1",
-    "conventional-changelog-conventionalcommits": "^4.6.0",
+    "conventional-changelog-conventionalcommits": "^4.6.1",
     "read-pkg": "^5.2.0"
   },
   "devDependencies": {
