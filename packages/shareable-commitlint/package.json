@@ -41,7 +41,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "conventional-changelog-conventionalcommits": "^4.6.0"
+    "conventional-changelog-conventionalcommits": "^4.6.1"
   },
   "devDependencies": {
     "@commitlint/types": "^13.1.0"
