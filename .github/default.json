@@ -34,7 +34,7 @@
 
   "postUpgradeTasks": {
     "commands": [
-      "git status -s | awk '($1 != \"D\"){print $2}' | xargs npx prettier --write --ignore-unknown"
+      "git status -s | awk '($1 != \"D\" && $1 != \".npmrc\"){print $2}' | xargs npx prettier --write --ignore-unknown"
     ],
     "fileFilters": ["**/**"],
     "executionMode": "branch"
@@ -82,7 +82,7 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "yarn",
       "postUpgradeTasks": {
-        "commands": ["yarn set version latest"],
+        "commands": ["yarn set version latest", "yarn"],
         "fileFilters": ["**/**"],
         "executionMode": "branch"
       }
