@@ -306,7 +306,7 @@ __metadata:
     conventional-changelog-conventionalcommits: ^4.6.1
     conventional-changelog-writer: ^5.0.0
     conventional-commits-parser: ^3.2.2
-    read-pkg: ^5.2.0
+    read-pkg: ^7.0.0
   peerDependencies:
     semantic-release: "*"
     semantic-release-monorepo: "*"
@@ -835,7 +835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/normalize-package-data@npm:^2.4.0":
+"@types/normalize-package-data@npm:^2.4.0, @types/normalize-package-data@npm:^2.4.1":
   version: 2.4.1
   resolution: "@types/normalize-package-data@npm:2.4.1"
   checksum: e87bccbf11f95035c89a132b52b79ce69a1e3652fe55962363063c9c0dae0fe2477ebc585e03a9652adc6f381d24ba5589cc5e51849df4ced3d3e004a7d40ed5
@@ -5703,7 +5703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-json@npm:^5.0.0":
+"parse-json@npm:^5.0.0, parse-json@npm:^5.2.0":
   version: 5.2.0
   resolution: "parse-json@npm:5.2.0"
   dependencies:
@@ -6101,6 +6101,18 @@ __metadata:
     parse-json: ^5.0.0
     type-fest: ^0.6.0
   checksum: eb696e60528b29aebe10e499ba93f44991908c57d70f2d26f369e46b8b9afc208ef11b4ba64f67630f31df8b6872129e0a8933c8c53b7b4daf0eace536901222
+  languageName: node
+  linkType: hard
+
+"read-pkg@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "read-pkg@npm:7.0.0"
+  dependencies:
+    "@types/normalize-package-data": ^2.4.1
+    normalize-package-data: ^3.0.2
+    parse-json: ^5.2.0
+    type-fest: ^2.0.0
+  checksum: 9ec461349fef4970705f33a012d293afb2d239f8a2f56da3df1f1f57cc84444c76aec21abdc5c0eeeebfa9c95cc2951a4839d683ce842b15fa0df4cf4aaea347
   languageName: node
   linkType: hard
 
@@ -7272,6 +7284,13 @@ resolve@^2.0.0-next.3:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^2.0.0":
+  version: 2.3.2
+  resolution: "type-fest@npm:2.3.2"
+  checksum: 0550c83b5f3c01c345ef60077947f0b18e38282359bcf24f17699046fbcf2e6be57db3e4a55ab68d9df1d1afc7a915c446749404c9e7e17b918f74a7560b5c0d
   languageName: node
   linkType: hard
 
