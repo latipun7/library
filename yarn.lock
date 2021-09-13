@@ -821,6 +821,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/json5@npm:^0.0.29":
+  version: 0.0.29
+  resolution: "@types/json5@npm:0.0.29"
+  checksum: e60b153664572116dfea673c5bda7778dbff150498f44f998e34b5886d8afc47f16799280e4b6e241c0472aef1bc36add771c569c68fc5125fc2ae519a3eb9ac
+  languageName: node
+  linkType: hard
+
 "@types/minimist@npm:^1.2.0":
   version: 1.2.2
   resolution: "@types/minimist@npm:1.2.2"
@@ -2427,18 +2434,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-ruppy-base@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "eslint-config-ruppy-base@npm:2.0.1"
+"eslint-config-ruppy-base@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-config-ruppy-base@npm:3.0.0"
   dependencies:
     "@rushstack/eslint-patch": ^1.0.6
     confusing-browser-globals: ^1.0.10
     eslint-config-prettier: ^8.3.0
-    eslint-plugin-prettier: ^3.4.0
+    eslint-plugin-prettier: ^4.0.0
   peerDependencies:
     eslint: 7.x
     prettier: 2.x
-  checksum: 0e5592807a86fe9e23b5b30d9157e5ba24b83588cfb1da012da072e3523e6786d6df4f88ff4fb57091b6e502ba600d0950c83b7b207407c6fe0f6e58a1c03078
+  checksum: fbeb8b681009051b922c711464aee3ae58b188414239fbb597ca702f2d64e024cea962d9f3b99367058909eac208fb34411c0c9b281c621539ab800bca68dc96
   languageName: node
   linkType: hard
 
@@ -2453,32 +2460,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-ruppy-node@npm:^2.0.0, eslint-config-ruppy-node@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "eslint-config-ruppy-node@npm:2.1.1"
+"eslint-config-ruppy-node@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-config-ruppy-node@npm:3.0.0"
   dependencies:
-    eslint-config-ruppy-base: ^2.0.0
-    eslint-plugin-import: ^2.23.4
+    eslint-config-ruppy-base: ^3.0.0
+    eslint-plugin-import: ^2.24.2
     eslint-plugin-node: ^11.1.0
   peerDependencies:
     eslint: 7.x
     prettier: 2.x
-  checksum: 30f9f0ba7203c4f4d5d2ddc85f13fc5011452680248143570ab06fce1f471e9581ea8f201558a8cda7e692268b155e807b5c8b62041bfd1af5871f8d70b29621
+  checksum: 61771992589f5d711d8739c4be3b36b77d07f40a7c05b6219b2d3e8e47ea5ec1d9d9302313b05e9dae3c595bfed48fc2feed93cae30b89da70a50eab5633d103
   languageName: node
   linkType: hard
 
-"eslint-config-ruppy-react@npm:^2.0.2":
-  version: 2.0.2
-  resolution: "eslint-config-ruppy-react@npm:2.0.2"
+"eslint-config-ruppy-react@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "eslint-config-ruppy-react@npm:3.0.0"
   dependencies:
-    eslint-config-ruppy-node: ^2.0.0
+    eslint-config-ruppy-node: ^3.0.0
     eslint-plugin-jsx-a11y: ^6.4.1
-    eslint-plugin-react: ^7.24.0
+    eslint-plugin-react: ^7.25.1
     eslint-plugin-react-hooks: ^4.2.0
   peerDependencies:
     eslint: 7.x
     prettier: 2.x
-  checksum: c0ff300f303f2f929f3b3186b791619b6ba8676e8416361e0476df167b6819928b60d4b497f87a244e71abed44f56957ca2dd597cbf41b13ddd36bb6e6c08a9b
+  checksum: 0c6cfc639170e023190d08908254e39df7d259ca408245d1d584b06509e906e2aba3b861ac3d88a491e1dc40c6dfbc7f265a9071838c387555359f43708241db
   languageName: node
   linkType: hard
 
@@ -2508,6 +2515,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-import-resolver-node@npm:^0.3.6":
+  version: 0.3.6
+  resolution: "eslint-import-resolver-node@npm:0.3.6"
+  dependencies:
+    debug: ^3.2.7
+    resolve: ^1.20.0
+  checksum: 6266733af1e112970e855a5bcc2d2058fb5ae16ad2a6d400705a86b29552b36131ffc5581b744c23d550de844206fb55e9193691619ee4dbf225c4bde526b1c8
+  languageName: node
+  linkType: hard
+
 "eslint-import-resolver-typescript@npm:^2.4.0":
   version: 2.4.0
   resolution: "eslint-import-resolver-typescript@npm:2.4.0"
@@ -2531,6 +2548,16 @@ __metadata:
     debug: ^3.2.7
     pkg-dir: ^2.0.0
   checksum: 3cc43a36a0075d300db6a3946203ec92249b6da1539694ef205a43b4ccfbc2eaf4961475d4b89c24b12c187d6bfd882c7c7d0b2ce02adb40c2dedb7fd022a7e2
+  languageName: node
+  linkType: hard
+
+"eslint-module-utils@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "eslint-module-utils@npm:2.6.2"
+  dependencies:
+    debug: ^3.2.7
+    pkg-dir: ^2.0.0
+  checksum: 814591f494e4f4b04c1af0fde2a679e7a7664a5feb51175e02ba96d671e34ec60cb1835d174508eb81c07a6c92c243f84c6349f4169b3bec1a8dbdd36a0934f3
   languageName: node
   linkType: hard
 
@@ -2568,6 +2595,31 @@ __metadata:
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
   checksum: 8c64bb96fa35607de3da1ddf5d127a5913aebde5677bc276c55fecb3e539a7287569dc697af4f5c523bd2b08bff8f5b525448df5aa7d6256c86436b615be5abc
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-import@npm:^2.24.2":
+  version: 2.24.2
+  resolution: "eslint-plugin-import@npm:2.24.2"
+  dependencies:
+    array-includes: ^3.1.3
+    array.prototype.flat: ^1.2.4
+    debug: ^2.6.9
+    doctrine: ^2.1.0
+    eslint-import-resolver-node: ^0.3.6
+    eslint-module-utils: ^2.6.2
+    find-up: ^2.0.0
+    has: ^1.0.3
+    is-core-module: ^2.6.0
+    minimatch: ^3.0.4
+    object.values: ^1.1.4
+    pkg-up: ^2.0.0
+    read-pkg-up: ^3.0.0
+    resolve: ^1.20.0
+    tsconfig-paths: ^3.11.0
+  peerDependencies:
+    eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0
+  checksum: df570aec83ffa126fd80596d9fb1b6799d3cde025ceeb159eb28383541ebbb855468c9a2dbc670ab9e91dd0a8f8a82e52fd909a7c61e9ffa585bcce84ae1aec4
   languageName: node
   linkType: hard
 
@@ -2623,18 +2675,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.4.0":
-  version: 3.4.0
-  resolution: "eslint-plugin-prettier@npm:3.4.0"
+"eslint-plugin-prettier@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "eslint-plugin-prettier@npm:4.0.0"
   dependencies:
     prettier-linter-helpers: ^1.0.0
   peerDependencies:
-    eslint: ">=5.0.0"
-    prettier: ">=1.13.0"
+    eslint: ">=7.28.0"
+    prettier: ">=2.0.0"
   peerDependenciesMeta:
     eslint-config-prettier:
       optional: true
-  checksum: 30a07e8d12637d2988e371f6a20ff4c86fd7fdc3596d1d18d62c0367804f38e06a65052d0281234aeb2552e4d1908dcb2de20543413e038251a2717a46400a9d
+  checksum: 03d69177a3c21fa2229c7e427ce604429f0b20ab7f411e2e824912f572a207c7f5a41fd1f0a95b9b8afe121e291c1b1f1dc1d44c7aad4b0837487f9c19f5210d
   languageName: node
   linkType: hard
 
@@ -2647,13 +2699,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.24.0":
-  version: 7.24.0
-  resolution: "eslint-plugin-react@npm:7.24.0"
+"eslint-plugin-react@npm:^7.25.1":
+  version: 7.25.1
+  resolution: "eslint-plugin-react@npm:7.25.1"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
     doctrine: ^2.1.0
+    estraverse: ^5.2.0
     has: ^1.0.3
     jsx-ast-utils: ^2.4.1 || ^3.0.0
     minimatch: ^3.0.4
@@ -2665,7 +2718,7 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: bf844f98d93f3617fbd03df4be4f4c9e8e49ea035678762b73a28df730e9518d5ac636293f6326b41b4a0678f9dfa059ce559f6652c7a2d914d477ec3a389619
+  checksum: e22ffbb6d336558cab38717c8c6199b72635500b9bd909891ba45865adae5846912a2b3daa355b0c1b1bfe6664b28ee277c14943acc739e703316eff87c1fce4
   languageName: node
   linkType: hard
 
@@ -3854,6 +3907,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-core-module@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "is-core-module@npm:2.6.0"
+  dependencies:
+    has: ^1.0.3
+  checksum: 183b3b96fed19822b13959876b0317e61fc2cb5ebcbc21639904c81f7ae328af57f8e18cc4750a9c4abebd686130c70d34a89521e57dbe002edfa4614507ce18
+  languageName: node
+  linkType: hard
+
 "is-date-object@npm:^1.0.1":
   version: 1.0.5
   resolution: "is-date-object@npm:1.0.5"
@@ -4190,6 +4252,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "json5@npm:1.0.1"
+  dependencies:
+    minimist: ^1.2.0
+  bin:
+    json5: lib/cli.js
+  checksum: e76ea23dbb8fc1348c143da628134a98adf4c5a4e8ea2adaa74a80c455fc2cdf0e2e13e6398ef819bfe92306b610ebb2002668ed9fc1af386d593691ef346fc3
+  languageName: node
+  linkType: hard
+
 "json5@npm:^2.2.0":
   version: 2.2.0
   resolution: "json5@npm:2.2.0"
@@ -4451,8 +4524,8 @@ __metadata:
     commitizen: ^4.2.4
     eslint: ^7.32.0
     eslint-config-ruppy-jest: ^2.0.0
-    eslint-config-ruppy-node: ^2.1.1
-    eslint-config-ruppy-react: ^2.0.2
+    eslint-config-ruppy-node: ^3.0.0
+    eslint-config-ruppy-react: ^3.0.0
     eslint-config-ruppy-ts: ^2.0.0
     husky: ^7.0.2
     inquirer: ^8.1.2
@@ -7169,6 +7242,18 @@ resolve@^2.0.0-next.3:
   version: 1.0.1
   resolution: "trim-off-newlines@npm:1.0.1"
   checksum: ca644908cace3d91b4c5b0fee0224640fed34a4503583e542db3f2dbec95246f2dc0f1bdfc5169e95f244f2613c0256ccc0c594ebe678fd9afdd9c5cf424562f
+  languageName: node
+  linkType: hard
+
+"tsconfig-paths@npm:^3.11.0":
+  version: 3.11.0
+  resolution: "tsconfig-paths@npm:3.11.0"
+  dependencies:
+    "@types/json5": ^0.0.29
+    json5: ^1.0.1
+    minimist: ^1.2.0
+    strip-bom: ^3.0.0
+  checksum: e14aaa6883f316d611db41cbb0fc8779b59c66b31d1e045565ad4540c77ccd3d2bb66f7c261b74ff535d3cc6b4a1ce21dc84774bf2a2a603ed6b0fb96f7e0cc7
   languageName: node
   linkType: hard
 
