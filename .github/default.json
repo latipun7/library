@@ -54,7 +54,7 @@
     "commitMessageAction": "Maintain",
     "commitMessageTopic": "lock-file",
     "commitMessageExtra": "",
-    "schedule": ["before 9am on monday"],
+    "schedule": ["after 5am and before 9am on monday"],
     "groupName": "Lock File Maintenance",
     "prBodyDefinitions": {
       "Change": "All locks refreshed"
