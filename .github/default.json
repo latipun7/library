@@ -44,7 +44,9 @@
     "enabled": true,
     "labels": ["security", "dependencies"],
     "semanticCommitType": "security",
-    "semanticCommitScope": "deps-tree"
+    "semanticCommitScope": "deps-tree",
+    "schedule": ["at any time"],
+    "prConcurrentLimit": 0
   },
 
   "lockFileMaintenance": {
