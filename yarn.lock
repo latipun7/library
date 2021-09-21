@@ -3801,9 +3801,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.1.2":
-  version: 8.1.2
-  resolution: "inquirer@npm:8.1.2"
+"inquirer@npm:^8.1.5":
+  version: 8.1.5
+  resolution: "inquirer@npm:8.1.5"
   dependencies:
     ansi-escapes: ^4.2.1
     chalk: ^4.1.1
@@ -3813,13 +3813,13 @@ __metadata:
     figures: ^3.0.0
     lodash: ^4.17.21
     mute-stream: 0.0.8
-    ora: ^5.3.0
+    ora: ^5.4.1
     run-async: ^2.4.0
     rxjs: ^7.2.0
     string-width: ^4.1.0
     strip-ansi: ^6.0.0
     through: ^2.3.6
-  checksum: fa6caec984d12a89f6bf926c3ee4924beed3dd1ceae66ad8ac287c3ef1b534e31cba86af66950f364305c42eb263c8f4a98c5a27227b3459308c8e3251c6d39a
+  checksum: f3fa97a9abc20206effc7ca4e4d664d783becb58dbb6eca5b49ad7b02ef102c6c09d5c93aa7d64112417e70300267fe80c164e098adb126b6059327681d76e68
   languageName: node
   linkType: hard
 
@@ -4528,7 +4528,7 @@ __metadata:
     eslint-config-ruppy-react: ^3.0.0
     eslint-config-ruppy-ts: ^2.0.0
     husky: ^7.0.2
-    inquirer: ^8.1.2
+    inquirer: ^8.1.5
     lint-staged: ^11.1.2
     prettier: ^2.4.0
     semantic-release: ^17.4.7
@@ -5562,7 +5562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ora@npm:^5.3.0":
+"ora@npm:^5.4.1":
   version: 5.4.1
   resolution: "ora@npm:5.4.1"
   dependencies:
