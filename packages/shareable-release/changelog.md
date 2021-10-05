@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/releaserc-v2.1.0](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.0.0...@latipun7/releaserc@2.1.0) (2021-10-05)
+
+### ✨ Features
+
+- **releaserc:** disable mentions in changelog [`76d1e85`](https://github.com/latipun7/library/commit/76d1e85ce846354f06749b8b2c70571625470246).
+
+  Leveraging GitHub release's contributors, now disabling mentions in
+  changelog, since it's a little buggy too (detecting user mentions when
+  mentioning scoped package name).
+
 ## [@latipun7/releaserc-v2.0.0](https://github.com/latipun7/library/compare/@latipun7/releaserc@1.0.0...@latipun7/releaserc@2.0.0) (2021-10-04)
 
 ### ⚠ BREAKING CHANGES
