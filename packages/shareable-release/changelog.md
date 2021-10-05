@@ -20,8 +20,6 @@ This project adheres to [Semantic Versioning](https://semver.org) and [Conventio
 
 - **deps:** update semantic-release monorepo ([#28](https://github.com/latipun7/library/issues/28)) [`05641c1`](https://github.com/latipun7/library/commit/05641c1bdbf00dfb650c152c2d88c48afcb2dfdb).
 
-  Honorable mentions: [17](https://github.com/17); 💖
-
 ## @latipun7/releaserc-v1.0.0 (2021-08-12)
 
 ### ✨ Features
