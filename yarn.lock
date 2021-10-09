@@ -60,13 +60,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:^13.2.0":
-  version: 13.2.0
-  resolution: "@commitlint/cli@npm:13.2.0"
+"@commitlint/cli@npm:^13.2.1":
+  version: 13.2.1
+  resolution: "@commitlint/cli@npm:13.2.1"
   dependencies:
     "@commitlint/format": ^13.2.0
     "@commitlint/lint": ^13.2.0
-    "@commitlint/load": ^13.2.0
+    "@commitlint/load": ^13.2.1
     "@commitlint/read": ^13.2.0
     "@commitlint/types": ^13.2.0
     lodash: ^4.17.19
@@ -75,15 +75,15 @@ __metadata:
     yargs: ^17.0.0
   bin:
     commitlint: cli.js
-  checksum: a61cf2c8ba02a096cbf912099888fb268cccaf535ab27e4c37a35205764f3f1d82d62cc82b997533bc1ff4c649da20c84672ea121de5bbf1f79f0b02bda143f5
+  checksum: 41b74874ec3e3b1da69f07710ea080654017d6e9a73d98d06c061259bb255e09a4870a516da0ee92f86776f030e608eb797cdd44dac804c39f2f32e798e81a60
   languageName: node
   linkType: hard
 
-"@commitlint/cz-commitlint@npm:^13.2.0":
-  version: 13.2.0
-  resolution: "@commitlint/cz-commitlint@npm:13.2.0"
+"@commitlint/cz-commitlint@npm:^13.2.1":
+  version: 13.2.1
+  resolution: "@commitlint/cz-commitlint@npm:13.2.1"
   dependencies:
-    "@commitlint/load": ^13.2.0
+    "@commitlint/load": ^13.2.1
     "@commitlint/types": ^13.2.0
     chalk: ^4.1.0
     lodash: ^4.17.21
@@ -91,7 +91,7 @@ __metadata:
   peerDependencies:
     commitizen: ^4.0.3
     inquirer: ^8.0.0
-  checksum: 1f7e04f5335e1aaa51c85ed4b8447f14fad53965a16f958a4cd18c4958579c7081f8a1c7897100eb74b9f59bb4ea895e06a137f91dcd5c6ad1c1ccffb4da5c29
+  checksum: 05cddcceb455d592ddd8cb0858f256d68cef73a308105e81702e034940abec569c6871f4dd9a4a2b9d218392486208ad280ec4a527b5b2148a895bce27953ff1
   languageName: node
   linkType: hard
 
@@ -166,9 +166,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:^13.2.0":
-  version: 13.2.0
-  resolution: "@commitlint/load@npm:13.2.0"
+"@commitlint/load@npm:^13.2.1":
+  version: 13.2.1
+  resolution: "@commitlint/load@npm:13.2.1"
   dependencies:
     "@commitlint/execute-rule": ^13.2.0
     "@commitlint/resolve-extends": ^13.2.0
@@ -178,7 +178,8 @@ __metadata:
     cosmiconfig: ^7.0.0
     lodash: ^4.17.19
     resolve-from: ^5.0.0
-  checksum: e7eb39679547b460bffaee41d23cda8be158d07fdaed53ac996eab6f917db13546fd5b90a4f2e359d04aec036f6a169cf4153a0be3f711996683c5ca0c947766
+    typescript: ^4.4.3
+  checksum: e64c32ab9f461daa6e389b613546ca3a57bac381dd57fa1252674cdbbb9c65ae4fac10f787ff305008fef9b4ea218ccfe8db09cbc716622a5695a85f1a8b5f35
   languageName: node
   linkType: hard
 
@@ -4620,8 +4621,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "library@workspace:."
   dependencies:
-    "@commitlint/cli": ^13.2.0
-    "@commitlint/cz-commitlint": ^13.2.0
+    "@commitlint/cli": ^13.2.1
+    "@commitlint/cz-commitlint": ^13.2.1
     "@types/semantic-release": ^17.2.2
     commitizen: ^4.2.4
     eslint: ^7.32.0
