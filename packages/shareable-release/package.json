@@ -52,7 +52,7 @@
     "@types/conventional-changelog-writer": "^4.0.1",
     "@types/conventional-commits-parser": "^3.0.2",
     "conventional-changelog-writer": "^5.0.0",
-    "conventional-commits-parser": "^3.2.2"
+    "conventional-commits-parser": "^3.2.3"
   },
   "peerDependencies": {
     "semantic-release": "*",

@@ -364,7 +364,7 @@ __metadata:
     "@types/conventional-commits-parser": ^3.0.2
     conventional-changelog-conventionalcommits: ^4.6.1
     conventional-changelog-writer: ^5.0.0
-    conventional-commits-parser: ^3.2.2
+    conventional-commits-parser: ^3.2.3
     read-pkg: ^5.2.0
   peerDependencies:
     semantic-release: "*"
@@ -2029,6 +2029,22 @@ __metadata:
   bin:
     conventional-commits-parser: cli.js
   checksum: e7138cfeebc77affe790fa06b6c2f8ecaf74837c886c234bb268b6c4b84d123aba81851c8e3ef7169ee2d044d2d8c7a2a60a29d06b8bc3f1b5d7c2c984d5bb4f
+  languageName: node
+  linkType: hard
+
+"conventional-commits-parser@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "conventional-commits-parser@npm:3.2.3"
+  dependencies:
+    JSONStream: ^1.0.4
+    is-text-path: ^1.0.1
+    lodash: ^4.17.15
+    meow: ^8.0.0
+    split2: ^3.0.0
+    through2: ^4.0.0
+  bin:
+    conventional-commits-parser: cli.js
+  checksum: 0f57b5cb7cb359eb49e6807cfd82b27cbe9ac30ec580b20ad7e79575561183110532a6c2e6328ce6c4cd05c01458b9bb781f1f6653b14560f7c509b87b0e9ac7
   languageName: node
   linkType: hard
 
