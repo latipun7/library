@@ -4648,7 +4648,7 @@ __metadata:
     eslint-config-ruppy-ts: ^2.0.0
     husky: ^7.0.2
     inquirer: ^8.1.5
-    lint-staged: ^11.2.3
+    lint-staged: ^11.2.6
     prettier: ^2.4.1
     semantic-release: ^18.0.0
     semantic-release-monorepo: ^7.0.5
@@ -4663,9 +4663,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.2.3":
-  version: 11.2.3
-  resolution: "lint-staged@npm:11.2.3"
+"lint-staged@npm:^11.2.6":
+  version: 11.2.6
+  resolution: "lint-staged@npm:11.2.6"
   dependencies:
     cli-truncate: 2.1.0
     colorette: ^1.4.0
@@ -4683,7 +4683,7 @@ __metadata:
     supports-color: 8.1.1
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: cf3a1612a8cb3790030fb1eaf98071b97be0c71e9ee87f2f65741321974178e9b15b480dac695bb126d2cd8751dd7d72071b13d7ea0e1a97a735d88bd3cc8bb7
+  checksum: b9071621db351c553579bd18df3d80fb753f851c4f1f72db0aaf12e713eab25b6d8a044dab2957817de7da02054a63f7725a49c763aee09295133f0d554f4d3f
   languageName: node
   linkType: hard
 
