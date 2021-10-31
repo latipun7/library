@@ -16,7 +16,7 @@
   "engines": {
     "node": ">=14.8.0"
   },
-  "packageManager": "yarn@3.0.2",
+  "packageManager": "yarn@3.1.0",
   "workspaces": [
     "packages/*"
   ],
