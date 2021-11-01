@@ -55,7 +55,12 @@
     "conventional-commits-parser": "^3.2.3"
   },
   "peerDependencies": {
-    "semantic-release": "*",
-    "semantic-release-monorepo": "*"
+    "semantic-release": "^18.0",
+    "semantic-release-monorepo": "^7.0"
+  },
+  "peerDependenciesMeta": {
+    "semantic-release-monorepo": {
+      "optional": true
+    }
   }
 }
