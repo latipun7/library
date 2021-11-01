@@ -10,26 +10,10 @@
 
 ## Currently This Library Contains
 
-- [Shareable `renovate` configuration preset](./.github/renovate.json).
-  How to use this config in other repository (your repo):
-
-  - Create `renovate.json` or `.github/renovate.json` relative to the root repository
-  - Place this inside the file:
-
-    ```json
-    {
-      "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-      "extends": ["github>latipun7/library//.github/default"]
-    }
-    ```
-
-  - Install [Renovate official bot](https://github.com/marketplace/renovate) or feel free to use my [self-hosted renovate bot](https://github.com/apps/latipun-renovates).
-
-  - Done.
-
-- [Shareable `commitlint` configuration](./packages/shareable-commitlint)
-- [Shareable `semantic-release` configuration](./packages/shareable-release)
-- [Shareable `typescript` configuration](./packages/shareable-tsconfig)
+- [Shareable `renovate` configuration preset](./configs/renovate)
+- [Shareable `commitlint` configuration](./configs/commitlint)
+- [Shareable `semantic-release` configuration](./configs/semantic-release)
+- [Shareable `typescript` configuration](./configs/tsconfig)
 
 ## Hacking to the Gate~! 🐱‍💻🎶
 
