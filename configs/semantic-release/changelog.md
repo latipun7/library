@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/releaserc-v2.1.1](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.1.0...@latipun7/releaserc@2.1.1) (2021-11-01)
+
+### 🐛 Fixes
+
+- specify `peerDependencies` explicitly [`2eda436`](https://github.com/latipun7/library/commit/2eda43686d003cd34129d121fbac08de770f6a63).
+
 ## [@latipun7/releaserc-v2.1.0](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.0.0...@latipun7/releaserc@2.1.0) (2021-10-05)
 
 ### ✨ Features
