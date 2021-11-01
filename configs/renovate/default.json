@@ -64,32 +64,7 @@
     }
   },
 
-  "regexManagers": [
-    {
-      "description": "Add manager for updating yarn berry",
-      "fileMatch": ["^package\\.json"],
-      "matchStrings": [
-        "\"packageManager\":\\s*\"(?<depName>.*)@(?<currentValue>.*)\""
-      ],
-      "lookupNameTemplate": "@yarnpkg/cli",
-      "datasourceTemplate": "npm",
-      "versioningTemplate": "semver"
-    }
-  ],
-
   "packageRules": [
-    {
-      "description": "Run commands before commiting custom regexManager",
-      "matchManagers": ["regex"],
-      "matchPackageNames": ["yarn"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "yarn",
-      "postUpgradeTasks": {
-        "commands": ["yarn set version latest", "yarn"],
-        "fileFilters": ["**/**"],
-        "executionMode": "branch"
-      }
-    },
     {
       "description": "Github Actions commits and 'v' prefix workaround",
       "matchDepTypes": ["action"],
