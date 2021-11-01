@@ -47,10 +47,10 @@
     "@commitlint/types": "^13.2.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "*",
-    "@commitlint/cz-commitlint": "*",
-    "commitizen": "*",
-    "inquirer": "*"
+    "@commitlint/cli": "^14.1",
+    "@commitlint/cz-commitlint": "^14.1",
+    "commitizen": "^4.2",
+    "inquirer": "^8.2"
   },
   "peerDependenciesMeta": {
     "@commitlint/cz-commitlint": {
