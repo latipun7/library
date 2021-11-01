@@ -4,6 +4,7 @@
   "extends": "./tsconfig",
   "compilerOptions": {
     "module": "ESNext",
+    "resolveJsonModule": true,
 
     "noEmit": true,
 
