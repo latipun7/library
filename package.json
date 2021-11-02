@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "cm": "cz",
-    "lint": "eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx .",
+    "lint": "tsc --noEmit && eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx .",
     "format": "prettier --check .",
     "test": "echo 'not yet implemented'",
     "build": "yarn workspaces foreach -vpt --jobs 7 run build",
@@ -30,8 +30,8 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.2.1",
-    "@commitlint/cz-commitlint": "^13.2.1",
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/cz-commitlint": "^14.1.0",
     "@types/semantic-release": "^17.2.2",
     "commitizen": "^4.2.4",
     "eslint": "^7.32.0",

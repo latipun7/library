@@ -2,6 +2,7 @@ import type { UserConfig } from '@commitlint/types';
 
 const Configuration: UserConfig = {
   parserPreset: 'conventional-changelog-conventionalcommits',
+  helpUrl: 'https://www.conventionalcommits.org/en/v1.0.0/',
   rules: {
     'body-leading-blank': [2, 'always'],
     'footer-leading-blank': [1, 'always'],
@@ -37,6 +38,7 @@ const Configuration: UserConfig = {
     ],
   },
   prompt: {
+    settings: { scopeEnumSeparator: ',' },
     messages: {
       skip: ':: leave it empty to skip :',
       max: '( maximum %d chars )',
