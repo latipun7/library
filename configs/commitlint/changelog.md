@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/commitlintrc-v1.1.0](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.0.1...@latipun7/commitlintrc@1.1.0) (2021-11-02)
+
+### ✨ Features
+
+- **commitlintrc:** add `helpUrl` & prompt settings [`c462bb8`](https://github.com/latipun7/library/commit/c462bb805199aeebb01d3e8b5b4dc640ad2f8ecd).
+
 ## [@latipun7/commitlintrc-v1.0.1](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.0.0...@latipun7/commitlintrc@1.0.1) (2021-11-01)
 
 ### 🐛 Fixes
