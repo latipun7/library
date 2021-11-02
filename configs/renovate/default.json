@@ -115,6 +115,22 @@
       "semanticCommitScope": "deps-dev"
     },
     {
+      "description": "NPM packageManager label and commits",
+      "matchDepTypes": ["packageManager"],
+      "labels": ["dependencies", "package-manager"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "{{{depName}}}",
+      "commitMessageTopic": "`{{{depName}}}`"
+    },
+    {
+      "description": "Docker label and commits",
+      "matchDatasources": ["docker"],
+      "labels": ["dependencies", "docker"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "docker",
+      "commitMessageTopic": "`{{{depName}}}` Docker tag"
+    },
+    {
       "description": "Auto merge definitely-typed packages",
       "matchPackagePrefixes": ["@types/"],
       "automerge": true,
