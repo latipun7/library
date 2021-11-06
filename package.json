@@ -34,7 +34,7 @@
     "@commitlint/cz-commitlint": "^14.1.0",
     "@types/semantic-release": "^17.2.2",
     "commitizen": "^4.2.4",
-    "eslint": "^7.32.0",
+    "eslint": "^8.2.0",
     "eslint-config-ruppy-jest": "^2.0.0",
     "eslint-config-ruppy-node": "^3.0.0",
     "eslint-config-ruppy-react": "^3.0.0",
