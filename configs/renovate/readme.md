@@ -21,7 +21,7 @@ How to use this config in other repository (your repo):
   }
   ```
 
-- Install [Renovate official bot](https://github.com/marketplace/renovate) _(recommended)_ or feel free to use my [self-hosted renovate bot](https://github.com/apps/latipun-renovates).
+- Install [Renovate official bot](https://github.com/marketplace/renovate) _(recommended)_ or feel free to [host renovate yourself](https://docs.renovatebot.com/getting-started/running/).
 
 - Done.
 
