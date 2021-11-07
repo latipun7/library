@@ -3,11 +3,11 @@
   "version": "1.1.0",
   "description": "Nerdy Ninja's shareable TypeScript configuration 🐱‍👤🎯",
   "license": "MIT",
-  "homepage": "https://github.com/latipun7/library/tree/main/packages/shareable-tsconfig#readme",
+  "homepage": "https://github.com/latipun7/library/tree/main/configs/tsconfig#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/latipun7/library.git",
-    "directory": "packages/shareable-tsconfig"
+    "directory": "configs/tsconfig"
   },
   "author": {
     "name": "Latif Sulistyo",
