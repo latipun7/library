@@ -1,4 +1,4 @@
-# `@latipun7/commitlintrc 🐱‍👤👨‍💻`
+# `@latipun7/commitlintrc 🐱‍👤🗃`
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
@@ -6,7 +6,7 @@
 
 > **Latipun CommitLintRC**
 >
-> Nerdy Ninja's shareable Commitlint configuration 🐱‍👤👨‍💻
+> Nerdy Ninja's shareable Commitlint configuration 🐱‍👤🗃
 
 ## About
 

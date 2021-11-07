@@ -3,11 +3,11 @@
   "version": "2.1.1",
   "description": "Nerdy Ninja's shareable Semantic Release configuration 🐱‍👤🚀",
   "license": "MIT",
-  "homepage": "https://github.com/latipun7/library/tree/main/packages/shareable-release#readme",
+  "homepage": "https://github.com/latipun7/library/tree/main/configs/semantic-release#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/latipun7/library.git",
-    "directory": "packages/shareable-release"
+    "directory": "configs/semantic-release"
   },
   "author": {
     "name": "Latif Sulistyo",
@@ -28,6 +28,11 @@
   ],
   "keywords": [
     "semantic-release",
+    "semantic-release-config",
+    "releaserc",
+    "npm",
+    "conventional-changelog",
+    "version",
     "semver",
     "semantic",
     "release",
