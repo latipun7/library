@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/releaserc-v2.1.2](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.1.1...@latipun7/releaserc@2.1.2) (2021-11-09)
+
+### 🐛 Fixes
+
+- correct package's metadata 🔍 [`3fd921c`](https://github.com/latipun7/library/commit/3fd921c1ab4c198d9c7fad23565574a5b08992b5).
+
+- **releaserc:** use custom main template [`2299496`](https://github.com/latipun7/library/commit/229949689ac16e9da360b5d86b3b7dfbb5627c95).
+
+  Generated changelog / release notes, instead of using preset's template, now using custom main template.
+
 ## [@latipun7/releaserc-v2.1.1](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.1.0...@latipun7/releaserc@2.1.1) (2021-11-01)
 
 ### 🐛 Fixes
