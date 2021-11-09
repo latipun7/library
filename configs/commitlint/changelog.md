@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/commitlintrc-v1.1.1](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.1.0...@latipun7/commitlintrc@1.1.1) (2021-11-09)
+
+### 🐛 Fixes
+
+- correct package's metadata 🔍 [`3fd921c`](https://github.com/latipun7/library/commit/3fd921c1ab4c198d9c7fad23565574a5b08992b5).
+
 ## [@latipun7/commitlintrc-v1.1.0](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.0.1...@latipun7/commitlintrc@1.1.0) (2021-11-02)
 
 ### ✨ Features
