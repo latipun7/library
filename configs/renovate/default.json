@@ -32,14 +32,6 @@
   "labels": ["dependencies"],
   "commitMessageTopic": "`{{{depName}}}`",
 
-  "postUpgradeTasks": {
-    "commands": [
-      "git status -s | awk '($1 != \"D\" && $1 != \".npmrc\"){print $2}' | xargs npx prettier --write --ignore-unknown"
-    ],
-    "fileFilters": ["**/**"],
-    "executionMode": "branch"
-  },
-
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security", "dependencies"],
