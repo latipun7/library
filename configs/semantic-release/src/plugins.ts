@@ -1,7 +1,7 @@
+import type { Options as WriterOpts } from 'conventional-changelog-writer';
+import type { Options as ParserOpts } from 'conventional-commits-parser';
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
-import type { Options as ParserOpts } from 'conventional-commits-parser';
-import type { Options as WriterOpts } from 'conventional-changelog-writer';
 import type { PluginSpec } from 'semantic-release';
 
 const preset = 'conventionalcommits';
@@ -56,11 +56,13 @@ const parserOpts: ParserOpts = {
 };
 
 const writerOpts: WriterOpts = {
+  mainTemplate: readFileSync(
+    resolve(__dirname, '..', 'templates', 'main.hbs'),
+    { encoding: 'utf-8' }
+  ),
   commitPartial: readFileSync(
     resolve(__dirname, '..', 'templates', 'commit-partial.hbs'),
-    {
-      encoding: 'utf-8',
-    }
+    { encoding: 'utf-8' }
   ),
   partials: {
     importantNotes: '{{{text}}}',
