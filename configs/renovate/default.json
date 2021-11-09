@@ -4,12 +4,11 @@
 
   "extends": [
     "config:base",
-    ":rebaseStalePrs",
-    ":prHourlyLimitNone",
+    ":prImmediately",
     ":semanticCommits",
+    ":prHourlyLimitNone",
     ":dependencyDashboard",
     ":timezone(Asia/Jakarta)",
-
     "github>whitesource/merge-confidence:beta"
   ],
 
@@ -27,7 +26,6 @@
   ],
 
   "prConcurrentLimit": 7,
-  "prCreation": "immediate",
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
   "commitMessageTopic": "`{{{depName}}}`",
