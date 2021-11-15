@@ -10,8 +10,9 @@
 
 ## Currently This Library Contains
 
-- [Shareable `renovate` configuration preset](./configs/renovate)
 - [Shareable `commitlint` configuration](./configs/commitlint)
+- [Shareable `eslint` configuration](./configs/eslint)
+- [Shareable `renovate` configuration preset](./configs/renovate)
 - [Shareable `semantic-release` configuration](./configs/semantic-release)
 - [Shareable `typescript` configuration](./configs/tsconfig)
 

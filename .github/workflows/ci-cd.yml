@@ -12,7 +12,7 @@ on:
 
 jobs:
   test_build:
-    name: Test and Build ⚙⚛
+    name: ⚛ Test and Build ⚙
 
     strategy:
       matrix:
@@ -22,32 +22,35 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Checkout 🛎️
+      - name: 🛑 Cancel Previous Running Workflows
+        uses: styfle/cancel-workflow-action@0.9.1
+
+      - name: 🛎️ Checkout
         uses: actions/checkout@v2.4.0
 
-      - name: Use NodeJS ${{ matrix.node }} 📦
+      - name: 📦 Use NodeJS ${{ matrix.node }}
         uses: actions/setup-node@v2.4.1
         with:
           node-version: ${{ matrix.node }}
           cache: yarn
           cache-dependency-path: "**/yarn.lock"
 
-      - name: Install Dependencies ✨
+      - name: ✨ Install Dependencies
         run: yarn --immutable --check-cache
 
-      - name: Run Linter 👨🏻‍💻
-        run: yarn lint
-
-      - name: Run Formatter 💅
-        run: yarn format
-
-      - name: Run Tests 🧪
-        run: yarn test
-
-      - name: Run Build 🛠
+      - name: 🛠 Run Build
         run: yarn build
 
-      - name: Cache dist Directory for Publish 🚀
+      - name: 👨🏻‍💻 Run Linter
+        run: yarn lint
+
+      - name: 💅 Run Formatter
+        run: yarn format
+
+      - name: 🧪 Run Tests
+        run: yarn test
+
+      - name: ♻ Cache dist Directory for Publish
         uses: actions/cache@v2.1.6
         with:
           path: |
@@ -55,7 +58,7 @@ jobs:
           key: ${{ github.sha }}-${{ runner.os }}-${{ matrix.node }}
 
   release:
-    name: Release ✨🚀
+    name: 🚀 Release ✨
     needs: test_build
     if: github.event_name == 'push'
 
@@ -67,19 +70,22 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - name: Checkout 🛎️
+      - name: 🛑 Cancel Previous Running Workflows
+        uses: styfle/cancel-workflow-action@0.9.1
+
+      - name: 🛎️ Checkout
         uses: actions/checkout@v2.4.0
         with:
           fetch-depth: 0
 
-      - name: Use NodeJS LTS 📦
+      - name: 📦 Use NodeJS LTS
         uses: actions/setup-node@v2.4.1
         with:
           node-version: ${{ matrix.node }}
           cache: yarn
           cache-dependency-path: "**/yarn.lock"
 
-      - name: Restore dist Directory for Publish 🚀
+      - name: ♻ Restore dist Directory for Publish
         id: restore-dist
         uses: actions/cache@v2.1.6
         with:
@@ -87,10 +93,10 @@ jobs:
             **/dist/**/*
           key: ${{ github.sha }}-${{ runner.os }}-${{ matrix.node }}
 
-      - name: Install Dependencies ✨
+      - name: ✨ Install Dependencies
         run: yarn --immutable --check-cache
 
-      - name: Release 🚀
+      - name: 🚀 Release
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
