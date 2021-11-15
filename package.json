@@ -22,9 +22,10 @@
   ],
   "scripts": {
     "cm": "cz",
-    "lint": "tsc --noEmit && eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx .",
+    "lint": "eslint --ext .js,.cjs,.mjs,.jsx,.ts,.tsx .",
     "format": "prettier --check .",
-    "test": "echo 'not yet implemented'",
+    "test": "yarn workspaces foreach -vpt --jobs 7 run test",
+    "dev": "yarn workspaces foreach -vpit run dev",
     "build": "yarn workspaces foreach -vpt --jobs 7 run build",
     "release": "yarn workspaces foreach -vt --no-private run semantic-release",
     "postinstall": "husky install"
@@ -34,11 +35,7 @@
     "@commitlint/cz-commitlint": "^14.1.0",
     "@types/semantic-release": "^17.2.3",
     "commitizen": "^4.2.4",
-    "eslint": "^7.32.0",
-    "eslint-config-ruppy-jest": "^2.0.0",
-    "eslint-config-ruppy-node": "^3.0.0",
-    "eslint-config-ruppy-react": "^3.0.0",
-    "eslint-config-ruppy-ts": "^2.0.0",
+    "eslint": "^8.2.0",
     "husky": "^7.0.4",
     "inquirer": "^8.2.0",
     "lint-staged": "^11.2.6",
@@ -46,6 +43,9 @@
     "semantic-release": "^18.0.0",
     "semantic-release-monorepo": "^7.0.5",
     "typescript": "^4.4.4"
+  },
+  "eslintConfig": {
+    "extends": "./configs/eslint/dist/index.js"
   },
   "lint-staged": {
     "**/*.{js,cjs,mjs,jsx,ts,tsx}": [

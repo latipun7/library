@@ -1,0 +1,7 @@
+{
+  "extends": "@latipun7/tsconfig/cjs",
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "isolatedModules": false
+  }
+}
