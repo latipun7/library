@@ -74,7 +74,7 @@
       "description": "Group prettier packages",
       "matchPackageNames": ["prettier"],
       "matchPackagePatterns": [
-        "^@prettier\\/",
+        "^@.*prettier.*\\/",
         "^prettier-(?:plugin|config)-",
         "^@.+\\/.*prettier"
       ],
@@ -84,7 +84,7 @@
       "description": "Group eslint packages",
       "matchPackageNames": ["eslint"],
       "matchPackagePatterns": [
-        "^@eslint\\/",
+        "^@.*eslint.*\\/",
         "^eslint-(?:plugin|config)-",
         "^@.+\\/.*eslint"
       ],
