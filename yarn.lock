@@ -324,7 +324,7 @@ __metadata:
     "@next/eslint-plugin-next": ^12.0.4
     "@types/confusing-browser-globals": ^1.0.0
     "@typescript-eslint/eslint-plugin": ^5.3.1
-    "@typescript-eslint/parser": ^5.3.1
+    "@typescript-eslint/parser": ^5.4.0
     confusing-browser-globals: ^1.0.10
     eslint-config-prettier: ^8.3.0
     eslint-find-rules: ^4.0.0
@@ -1028,20 +1028,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.3.1":
-  version: 5.3.1
-  resolution: "@typescript-eslint/parser@npm:5.3.1"
+"@typescript-eslint/parser@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "@typescript-eslint/parser@npm:5.4.0"
   dependencies:
-    "@typescript-eslint/scope-manager": 5.3.1
-    "@typescript-eslint/types": 5.3.1
-    "@typescript-eslint/typescript-estree": 5.3.1
+    "@typescript-eslint/scope-manager": 5.4.0
+    "@typescript-eslint/types": 5.4.0
+    "@typescript-eslint/typescript-estree": 5.4.0
     debug: ^4.3.2
   peerDependencies:
     eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 9ca2928ca3400898a16700deb5deb5aeb2e45c9f430e243be78e6aefa8e515edcb0d210e8ad2b195894a228a7d9c9355906cb68b9c7ed6b23642672465e501a3
+  checksum: d76732469cb100426fb9574713c1065c14969a502214b8b400e4829e5c01b1fe4744ce59a86ef9fd4ac5baf620454c517975b136b8735881f617e53322325cd7
   languageName: node
   linkType: hard
 
