@@ -48,11 +48,11 @@
     "conventional-changelog-conventionalcommits": "^4.6.1"
   },
   "devDependencies": {
-    "@commitlint/types": "^14.0.0"
+    "@commitlint/types": "^15.0.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^14.1",
-    "@commitlint/cz-commitlint": "^14.1",
+    "@commitlint/cli": "^15.0",
+    "@commitlint/cz-commitlint": "^15.0",
     "commitizen": "^4.2",
     "inquirer": "^8.2"
   },

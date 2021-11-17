@@ -31,8 +31,8 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^14.1.0",
-    "@commitlint/cz-commitlint": "^14.1.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/cz-commitlint": "^15.0.0",
     "@types/semantic-release": "^17.2.3",
     "commitizen": "^4.2.4",
     "eslint": "^8.2.0",
