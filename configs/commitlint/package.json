@@ -40,6 +40,7 @@
     "access": "public"
   },
   "scripts": {
+    "dev": "tsc --project tsconfig.build.json --watch",
     "build": "tsc --project tsconfig.build.json",
     "semantic-release": "semantic-release"
   },
