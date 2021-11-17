@@ -42,7 +42,7 @@
     "prettier": "^2.4.1",
     "semantic-release": "^18.0.0",
     "semantic-release-monorepo": "^7.0.5",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   },
   "eslintConfig": {
     "extends": "@latipun7"
