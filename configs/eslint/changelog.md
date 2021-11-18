@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/eslint-config-v1.0.1](https://github.com/latipun7/library/compare/@latipun7/eslint-config@1.0.0...@latipun7/eslint-config@1.0.1) (2021-11-18)
+
+### 🐛 Fixes
+
+- don't publish map files to reduce size [`a87bf89`](https://github.com/latipun7/library/commit/a87bf8975dd4ec38937ba2bde436a0ccc9bb8b49).
+
 ## @latipun7/eslint-config-v1.0.0 (2021-11-18)
 
 ### ✨ Features
