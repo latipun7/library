@@ -16,7 +16,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NodeJS ESModule target
 
-  ```json
+  ```jsonc
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/esm",
@@ -28,7 +28,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NextJS apps
 
-  ```json
+  ```jsonc
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/next",
@@ -40,7 +40,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NodeJS CommonJS target
 
-  ```json
+  ```jsonc
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/cjs",
@@ -49,6 +49,10 @@ yarn add -D @latipun7/tsconfig typescript
     "compilerOptions": {}
   }
   ```
+
+**Note**: Since typescript's `extends` has behavior that properties with relative paths found in the configuration file, which aren't excluded from inheritance, will be resolved relative to the configuration file they originated in.
+
+This means, `files`, `include`, `exclude`, and other properties that accept relative path like `compilerOptions.baseUrl`, `compilerOptions.paths`, etc, you need to specify it yourself.
 
 ## Hacking to the Gate~! 🐱‍💻🎶
 
