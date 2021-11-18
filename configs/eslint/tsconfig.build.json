@@ -1,8 +1,8 @@
 {
   "extends": "./tsconfig",
+  "include": ["src/**/*"],
   "compilerOptions": {
     "outDir": "dist",
-    "declaration": false,
-    "declarationMap": false
+    "declaration": false
   }
 }
