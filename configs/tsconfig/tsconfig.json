@@ -14,6 +14,7 @@
     "resolveJsonModule": false, // Node ESM doesn't suppport JSON Modules yet
 
     "noEmitOnError": true,
+    "preserveValueImports": true,
 
     "newLine": "lf",
     "removeComments": true,
