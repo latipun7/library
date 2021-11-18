@@ -45,7 +45,7 @@
     "typescript": "^4.4.4"
   },
   "eslintConfig": {
-    "extends": "./configs/eslint/dist/index.js"
+    "extends": "@latipun7"
   },
   "lint-staged": {
     "**/*.{js,cjs,mjs,jsx,ts,tsx}": [
