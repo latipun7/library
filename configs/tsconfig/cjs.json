@@ -4,6 +4,8 @@
   "extends": "./esm",
   "compilerOptions": {
     "module": "CommonJS",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+
+    "preserveValueImports": false // can only be used when 'module' is set to 'es2015' or later
   }
 }
