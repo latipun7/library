@@ -17,12 +17,12 @@
 
     // Emit
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
     "noEmitOnError": true,
     "preserveValueImports": true,
     "newLine": "lf",
     "removeComments": true,
-    "sourceMap": true,
+    "sourceMap": false,
 
     // JavaScript Support
     "checkJs": true,
