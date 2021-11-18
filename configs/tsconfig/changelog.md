@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/tsconfig-v1.2.0](https://github.com/latipun7/library/compare/@latipun7/tsconfig@1.1.1...@latipun7/tsconfig@1.2.0) (2021-11-18)
+
+### ✨ Features
+
+- **tsconfig:** change config to not emit map files [`3d707ff`](https://github.com/latipun7/library/commit/3d707ff2307bb7cf4739a3cb52bfa21dba88a411).
+
+- **tsconfig:** enable new `preserveValueImports` 💰 [`524f2e8`](https://github.com/latipun7/library/commit/524f2e811ea71ccc2c594ce319e0d2a962b6d66f).
+
+  need [typescript v4.5](https://devblogs.microsoft.com/typescript/announcing-typescript-4-5/#type-on-import-names).
+
+### 📚 Documentations
+
+- **tsconfig:** add note to clarify about `extends` behavior [`9917422`](https://github.com/latipun7/library/commit/991742230270f9826d0398abd29b205a24c16853).
+
 ## [@latipun7/tsconfig-v1.1.1](https://github.com/latipun7/library/compare/@latipun7/tsconfig@1.1.0...@latipun7/tsconfig@1.1.1) (2021-11-09)
 
 ### 🐛 Fixes
