@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // Type Checking
     "exactOptionalPropertyTypes": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
@@ -9,29 +10,39 @@
     "noUnusedParameters": true,
     "strict": true,
 
+    // Modules
     "module": "ES2020",
     "moduleResolution": "Node",
     "resolveJsonModule": false, // Node ESM doesn't suppport JSON Modules yet
 
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
     "noEmitOnError": true,
     "preserveValueImports": true,
-
     "newLine": "lf",
     "removeComments": true,
     "sourceMap": true,
 
+    // JavaScript Support
     "checkJs": true,
 
+    // Interop Constraints
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
 
+    // Language and Environment
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "lib": ["ES2020"],
     "target": "ES2020", // Targeting node 14
 
+    // Projects
     "incremental": true,
 
+    // Completeness
     "skipLibCheck": true
   }
 }
