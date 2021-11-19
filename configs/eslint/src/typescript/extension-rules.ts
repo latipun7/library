@@ -2,41 +2,131 @@
 module.exports = {
   rules: {
     // Enforce consistent brace style for blocks
-    '@typescript-eslint/brace-style': 'off',
+    'brace-style': 'off',
+    '@typescript-eslint/brace-style': [
+      'error',
+      '1tbs',
+      { allowSingleLine: true },
+    ],
 
     // Require or disallow trailing comma
-    '@typescript-eslint/comma-dangle': 'off',
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+        enums: 'always-multiline',
+        generics: 'always-multiline',
+        tuples: 'always-multiline',
+      },
+    ],
 
     // Enforces consistent spacing before and after commas
-    '@typescript-eslint/comma-spacing': 'off',
+    'comma-spacing': 'off',
+    '@typescript-eslint/comma-spacing': [
+      'error',
+      { before: false, after: true },
+    ],
 
     // Enforce default parameters to be last
-    '@typescript-eslint/default-param-last': 'off',
+    'default-param-last': 'off',
+    '@typescript-eslint/default-param-last': 'error',
 
     // enforce dot notation whenever possible
-    '@typescript-eslint/dot-notation': 'off',
+    'dot-notation': 'off',
+    '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
 
     // Require or disallow spacing between function identifiers and their invocations
-    '@typescript-eslint/func-call-spacing': 'off',
+    'func-call-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': ['error', 'never'],
 
     // Enforce consistent indentation
-    '@typescript-eslint/indent': 'off',
+    indent: 'off',
+    '@typescript-eslint/indent': [
+      'error',
+      2,
+      {
+        SwitchCase: 1,
+        VariableDeclarator: 1,
+        outerIIFEBody: 1,
+        FunctionDeclaration: {
+          parameters: 1,
+          body: 1,
+        },
+        FunctionExpression: {
+          parameters: 1,
+          body: 1,
+        },
+        CallExpression: {
+          arguments: 1,
+        },
+        ArrayExpression: 1,
+        ObjectExpression: 1,
+        ImportDeclaration: 1,
+        flatTernaryExpressions: false,
+        // list derived from https://github.com/benjamn/ast-types/blob/master/def/jsx.ts
+        ignoredNodes: [
+          'JSXElement',
+          'JSXElement > *',
+          'JSXAttribute',
+          'JSXIdentifier',
+          'JSXNamespacedName',
+          'JSXMemberExpression',
+          'JSXSpreadAttribute',
+          'JSXExpressionContainer',
+          'JSXOpeningElement',
+          'JSXClosingElement',
+          'JSXFragment',
+          'JSXOpeningFragment',
+          'JSXClosingFragment',
+          'JSXText',
+          'JSXEmptyExpression',
+          'JSXSpreadChild',
+        ],
+        ignoreComments: false,
+      },
+    ],
 
     // require or disallow initialization in variable declarations
     '@typescript-eslint/init-declarations': 'off',
 
     // Enforce consistent spacing before and after keywords
-    '@typescript-eslint/keyword-spacing': 'off',
+    'keyword-spacing': 'off',
+    '@typescript-eslint/keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true },
+        },
+      },
+    ],
 
     // Require or disallow an empty line between class members
-    '@typescript-eslint/lines-between-class-members': 'off',
+    'lines-between-class-members': 'off',
+    '@typescript-eslint/lines-between-class-members': [
+      'error',
+      'always',
+      {
+        exceptAfterSingleLine: false,
+        exceptAfterOverload: true,
+      },
+    ],
 
     // Disallow generic Array constructors
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
 
     // Disallow duplicate class members
-    '@typescript-eslint/no-dupe-class-members': 'off',
+    'no-dupe-class-members': 'off',
+    '@typescript-eslint/no-dupe-class-members': 'error',
 
     // Disallow duplicate imports
     '@typescript-eslint/no-duplicate-imports': 'off',
@@ -63,7 +153,8 @@ module.exports = {
     '@typescript-eslint/no-invalid-this': 'off',
 
     // Disallow function declarations that contain unsafe references inside loop statements
-    '@typescript-eslint/no-loop-func': 'off',
+    'no-loop-func': 'off',
+    '@typescript-eslint/no-loop-func': 'error',
 
     // Disallow literal numbers that lose precision
     'no-loss-of-precision': 'off',
@@ -73,19 +164,30 @@ module.exports = {
     '@typescript-eslint/no-magic-numbers': 'off',
 
     // Disallow variable redeclaration
-    '@typescript-eslint/no-redeclare': 'off',
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': 'error',
 
     // Disallow specified modules when loaded by import
     '@typescript-eslint/no-restricted-imports': 'off',
 
     // Disallow variable declarations from shadowing variables declared in the outer scope
-    '@typescript-eslint/no-shadow': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': 'error',
 
     // Disallow throwing literals as exceptions
-    '@typescript-eslint/no-throw-literal': 'off',
+    'no-throw-literal': 'off',
+    '@typescript-eslint/no-throw-literal': 'error',
 
     // Disallow unused expressions
-    '@typescript-eslint/no-unused-expressions': 'off',
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': [
+      'error',
+      {
+        allowShortCircuit: false,
+        allowTernary: false,
+        allowTaggedTemplates: false,
+      },
+    ],
 
     // Disallow unused variables
     'no-unused-vars': 'off',
@@ -100,33 +202,58 @@ module.exports = {
     ],
 
     // Disallow the use of variables before they are defined
-    '@typescript-eslint/no-use-before-define': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: true,
+        classes: true,
+        variables: true,
+        enums: true,
+        typedefs: true,
+        ignoreTypeReferences: false,
+      },
+    ],
 
     // Disallow unnecessary constructors
-    '@typescript-eslint/no-useless-constructor': 'off',
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': 'error',
 
     // Enforce consistent spacing inside braces
-    '@typescript-eslint/object-curly-spacing': 'off',
+    'object-curly-spacing': 'off',
+    '@typescript-eslint/object-curly-spacing': ['error', 'always'],
 
     // require or disallow padding lines between statements
     '@typescript-eslint/padding-line-between-statements': 'off',
 
     // Enforce the consistent use of either backticks, double, or single quotes
-    '@typescript-eslint/quotes': 'off',
+    quotes: 'off',
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
 
     // Disallow async functions which have no await expression
     '@typescript-eslint/require-await': 'off',
 
     // Enforces consistent returning of awaited values
-    '@typescript-eslint/return-await': 'off',
+    'no-return-await': 'off',
+    '@typescript-eslint/return-await': 'error',
 
     // Require or disallow semicolons instead of ASI
-    '@typescript-eslint/semi': 'off',
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'always'],
 
     // Enforces consistent spacing before function parenthesis
-    '@typescript-eslint/space-before-function-paren': 'off',
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': [
+      'error',
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+      },
+    ],
 
     // This rule is aimed at ensuring there are spaces around infix operators.
-    '@typescript-eslint/space-infix-ops': 'off',
+    'space-infix-ops': 'off',
+    '@typescript-eslint/space-infix-ops': 'error',
   },
 };
