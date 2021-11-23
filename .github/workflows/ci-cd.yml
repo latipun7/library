@@ -51,7 +51,7 @@ jobs:
         run: yarn test
 
       - name: ♻ Cache dist Directory for Publish
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v2.1.7
         with:
           path: |
             **/dist/**/*
@@ -87,7 +87,7 @@ jobs:
 
       - name: ♻ Restore dist Directory for Publish
         id: restore-dist
-        uses: actions/cache@v2.1.6
+        uses: actions/cache@v2.1.7
         with:
           path: |
             **/dist/**/*
