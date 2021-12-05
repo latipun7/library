@@ -1,6 +1,6 @@
 {
   "name": "library",
-  "description": "Nerdy Ninja's library 🐱‍👤📜",
+  "description": "Nerdy Ninja's library 🥷📜",
   "private": true,
   "license": "MIT",
   "homepage": "https://github.com/latipun7/library#readme",
@@ -16,7 +16,7 @@
   "engines": {
     "node": ">=14.8.0"
   },
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "yarn@3.1.1",
   "workspaces": [
     "configs/*"
   ],
