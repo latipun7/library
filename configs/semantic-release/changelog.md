@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/releaserc-v2.2.0](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.1.3...@latipun7/releaserc@2.2.0) (2021-12-06)
+
+### ✨ Features
+
+- **releaserc:** add configuration for VSCode extension releases [`ffda893`](https://github.com/latipun7/library/commit/ffda893fef674dfe455a1ff26ae65279954de8dd).
+
+### 📚 Documentations
+
+- **releaserc:** change URL of conventional commits guide [`8f321de`](https://github.com/latipun7/library/commit/8f321de14114e40c3e509aa513b94387b086f0c5).
+
 ## [@latipun7/releaserc-v2.1.3](https://github.com/latipun7/library/compare/@latipun7/releaserc@2.1.2...@latipun7/releaserc@2.1.3) (2021-11-18)
 
 ### 🐛 Fixes
