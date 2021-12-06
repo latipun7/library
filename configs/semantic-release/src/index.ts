@@ -1,6 +1,5 @@
 import type { Options } from 'semantic-release';
-
-import plugins from './plugins';
+import { plugins } from './plugins';
 
 const Configuration: Options = {
   branches: [

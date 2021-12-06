@@ -1,4 +1,4 @@
-# `@latipun7/releaserc 🐱‍👤🚀`
+# `@latipun7/releaserc 🥷🚀`
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
@@ -6,17 +6,23 @@
 
 > **Latipun Semantic-Realease**
 >
-> Nerdy Ninja's shareable Semantic Release configuration 🐱‍👤🚀
+> 🥷 Nerdy Ninja's shareable Semantic Release configuration 🚀
 
 ## About
 
 Shareable `semantic-release` configuration enforcing [conventional commits](https://conventionalcommits.org/).
 
-Use with [semantic-release](https://npm.im/semantic-release) and [semantic-release-monorepo](https://npm.im/semantic-release-monorepo).
+- Semantic Release adheres to [conventional commits specs](https://www.conventionalcommits.org/en/v1.0.0/#specification).
+- Add commit `type`: feature, revert, security.
+- Extends release notes from [conventionalcommits preset](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-conventionalcommits).
+- Custom release notes & changelog.
+- Lot of customizations on [writerOpts](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-writer#options).
+- Note Groups with emoji 😎
+- 6 commit types for changelog: feat/feature, fix, docs, perf, revert, security.
 
 ## Getting started
 
-- Standard repository
+- Standard repository (NPM)
 
   ```sh
   yarn add -D @latipun7/releaserc semantic-release
@@ -31,7 +37,7 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
   }
   ```
 
-- Monorepo
+- Monorepo (NPM)
 
   ```sh
   yarn add -D @latipun7/releaserc semantic-release semantic-release-monorepo
@@ -47,7 +53,22 @@ Use with [semantic-release](https://npm.im/semantic-release) and [semantic-relea
   }
   ```
 
-## Hacking to the Gate~! 🐱‍💻🎶
+- VSCode Extension repository
+
+  ```sh
+  yarn add -D @latipun7/releaserc semantic-release
+  ```
+
+  ```json
+  // package.json
+  "release": {
+    "extends": [
+      "@latipun7/releaserc/vsce"
+    ]
+  }
+  ```
+
+## Hacking to the Gate~! 🧑‍💻🎶
 
 [MIT License][license-url] © Latif Sulistyo
 

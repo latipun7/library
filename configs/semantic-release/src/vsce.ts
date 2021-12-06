@@ -1,10 +1,9 @@
-import { sync as readPackageSync } from 'read-pkg';
 import type { Options } from 'semantic-release';
-import { plugins } from './plugins';
+import { vscePlugins } from './plugins';
 
-const Monorepo: Options = {
-  tagFormat: `${readPackageSync().name}@<%= version %>`,
+const Configuration: Options = {
   branches: [
+    '+([0-9])?(.{+([0-9]),x}).x',
     'main',
     'next',
     {
@@ -16,7 +15,7 @@ const Monorepo: Options = {
       prerelease: true,
     },
   ],
-  plugins,
+  plugins: vscePlugins,
 };
 
-module.exports = Monorepo;
+module.exports = Configuration;
