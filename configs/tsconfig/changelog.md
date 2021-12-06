@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/tsconfig-v1.2.1](https://github.com/latipun7/library/compare/@latipun7/tsconfig@1.2.0...@latipun7/tsconfig@1.2.1) (2021-12-06)
+
+### 🐛 Fixes
+
+- **meta:** use RGI emoji 🥷 [`e90b913`](https://github.com/latipun7/library/commit/e90b91381d9ffdfb228548b5b760d2bda93da034).
+
 ## [@latipun7/tsconfig-v1.2.0](https://github.com/latipun7/library/compare/@latipun7/tsconfig@1.1.1...@latipun7/tsconfig@1.2.0) (2021-11-18)
 
 ### ✨ Features
