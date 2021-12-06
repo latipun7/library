@@ -1,4 +1,4 @@
-# `@latipun7/tsconfig 🐱‍👤🎯`
+# `@latipun7/tsconfig 🥷🎯`
 
 [![discord-image]][discord-url]
 [![workflow-image]][workflow-url]
@@ -6,7 +6,7 @@
 
 > **Latipun TypeScript Configuration**
 >
-> Nerdy Ninja's shareable TypeScript [configuration](https://www.typescriptlang.org/tsconfig/) 🐱‍👤🎯
+> 🥷 Nerdy Ninja's shareable TypeScript [configuration](https://www.typescriptlang.org/tsconfig/) 🎯
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NodeJS ESModule target
 
-  ```jsonc
+  ```json
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/esm",
@@ -28,7 +28,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NextJS apps
 
-  ```jsonc
+  ```json
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/next",
@@ -40,7 +40,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 - NodeJS CommonJS target
 
-  ```jsonc
+  ```json
   // tsconfig.json
   {
     "extends": "@latipun7/tsconfig/cjs",
@@ -54,7 +54,7 @@ yarn add -D @latipun7/tsconfig typescript
 
 This means, `files`, `include`, `exclude`, and other properties that accept relative path like `compilerOptions.baseUrl`, `compilerOptions.paths`, etc, you need to specify it yourself.
 
-## Hacking to the Gate~! 🐱‍💻🎶
+## Hacking to the Gate~! 🧑‍💻🎶
 
 [MIT License][license-url] © Latif Sulistyo
 

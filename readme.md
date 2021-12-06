@@ -1,10 +1,10 @@
-# `library 🐱‍👤📚`
+# `library 🥷📚`
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
 [![NPM Package][npm-image]][npm-url]
 
-> **Nerdy Ninja's library 🐱‍👤📜**
+> **🥷 Nerdy Ninja's library 📜**
 >
 > This monorepo contains all my personal library that contains shareable configurations, code utilities, modules, ui components, and more to come ...
 
@@ -16,7 +16,7 @@
 - [Shareable `semantic-release` configuration](./configs/semantic-release)
 - [Shareable `typescript` configuration](./configs/tsconfig)
 
-## Hacking to the Gate~! 🐱‍💻🎶
+## Hacking to the Gate~! 🧑‍💻🎶
 
 [MIT License](./license) © Latif Sulistyo
 

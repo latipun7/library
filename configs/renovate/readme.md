@@ -1,11 +1,11 @@
-# `renovate-preset 💅`
+# `renovate-preset 🥷💅`
 
 [![discord-image]][discord-url]
 [![workflow-image]][workflow-url]
 
 > **Latipun Renovate Preset**
 >
-> Nerdy Ninja's shareable [renovate](https://docs.renovatebot.com/config-presets/) preset 💅
+> 🥷 Nerdy Ninja's shareable [renovate](https://docs.renovatebot.com/config-presets/) preset 💅
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ How to use this config in other repository (your repo):
 
 - Done.
 
-## Hacking to the Gate~! 🐱‍💻🎶
+## Hacking to the Gate~! 🧑‍💻🎶
 
 [MIT License][license-url] © Latif Sulistyo
 

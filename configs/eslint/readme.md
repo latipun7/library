@@ -1,4 +1,4 @@
-# `@latipun7/eslint-config 🐱‍👤👨🏻‍💻`
+# `@latipun7/eslint-config 🥷👓`
 
 [![Discord][discord-image]][discord-url]
 [![GitHub Workflow Status][workflow-image]][workflow-url]
@@ -6,7 +6,7 @@
 
 > **Latipun ESLint**
 >
-> Nerdy Ninja's shareable ESLint configuration 🐱‍👤👨🏻‍💻
+> 🥷 Nerdy Ninja's shareable ESLint configuration 👓
 
 ## About
 
@@ -57,7 +57,7 @@ If you found weird behavior or suggestions, please file a [new issue](https://gi
   }
   ```
 
-## Hacking to the Gate~! 🐱‍💻🎶
+## Hacking to the Gate~! 🧑‍💻🎶
 
 [MIT License][license-url] © Latif Sulistyo
 
