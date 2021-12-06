@@ -10,7 +10,7 @@
 
 ## About
 
-Shareable `semantic-release` configuration enforcing [conventional commits](https://conventionalcommits.org/).
+Shareable `semantic-release` configuration enforcing [conventional commits](https://github.com/latipun7/.github/blob/main/commit-message-guide.md).
 
 - Semantic Release adheres to [conventional commits specs](https://www.conventionalcommits.org/en/v1.0.0/#specification).
 - Add commit `type`: feature, revert, security.
