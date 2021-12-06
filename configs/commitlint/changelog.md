@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/commitlintrc-v1.1.3](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.1.2...@latipun7/commitlintrc@1.1.3) (2021-12-06)
+
+### 🐛 Fixes
+
+- **commitlintrc:** change `helpUrl` [`e6650bb`](https://github.com/latipun7/library/commit/e6650bb349915454b8903a1918642b9cddbec7e6).
+
+- **meta:** use RGI emoji 🥷 [`e90b913`](https://github.com/latipun7/library/commit/e90b91381d9ffdfb228548b5b760d2bda93da034).
+
 ## [@latipun7/commitlintrc-v1.1.2](https://github.com/latipun7/library/compare/@latipun7/commitlintrc@1.1.1...@latipun7/commitlintrc@1.1.2) (2021-11-18)
 
 ### 🐛 Fixes
