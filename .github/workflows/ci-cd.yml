@@ -1,7 +1,7 @@
 # GitHub Actions References:
 # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
 
-name: ⚙ CI/CD 🚀
+name: ⚙🚀
 
 on:
   push:
