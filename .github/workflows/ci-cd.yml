@@ -1,7 +1,7 @@
 # GitHub Actions References:
 # https://docs.github.com/en/actions/reference/workflow-commands-for-github-actions#setting-an-output-parameter
 
-name: Continuous Integration and Continuous Delivery ⚙🚀
+name: ⚙ CI/CD 🚀
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
       - name: 🛠 Run Build
         run: yarn build
 
-      - name: 👨🏻‍💻 Run Linter
+      - name: 👓 Run Linter
         run: yarn lint
 
       - name: 💅 Run Formatter

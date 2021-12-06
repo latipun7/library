@@ -33,6 +33,6 @@ How to use this config in other repository (your repo):
 
 [discord-image]: https://img.shields.io/discord/758271814153011201?label=Developers%20Indonesia&logo=discord&style=flat-square
 [discord-url]: https://discord.gg/njSj2Nq "Chat and discuss at Developers Indonesia"
-[workflow-image]: https://img.shields.io/github/workflow/status/latipun7/library/Continuous%20Integration%20and%20Continuous%20Delivery%20%E2%9A%99%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
+[workflow-image]: https://img.shields.io/github/workflow/status/latipun7/library/%E2%9A%99%20CI%2FCD%20%F0%9F%9A%80?label=CI%2FCD&logo=github%20actions&style=flat-square
 [workflow-url]: https://github.com/latipun7/library/actions "GitHub Actions"
 [license-url]: https://github.com/latipun7/library/blob/main/license "MIT License"
