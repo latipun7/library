@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org) and [Conventional Commits](https://www.conventionalcommits.org) for commit guidelines.
 
+## [@latipun7/eslint-config-v1.0.4](https://github.com/latipun7/library/compare/@latipun7/eslint-config@1.0.3...@latipun7/eslint-config@1.0.4) (2021-12-09)
+
+### 🐛 Fixes
+
+- **eslintrc:** resolve `tsconfig.json` from root too [`f646a68`](https://github.com/latipun7/library/commit/f646a6841f5315c69b515f9ff8ee882d2ecf0f43).
+
 ## [@latipun7/eslint-config-v1.0.3](https://github.com/latipun7/library/compare/@latipun7/eslint-config@1.0.2...@latipun7/eslint-config@1.0.3) (2021-12-06)
 
 ### 🐛 Fixes
