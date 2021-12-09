@@ -34,6 +34,7 @@ module.exports = {
             project: [
               '*/tsconfig.json',
               '{packages,components,shareable,configs,library,lib}/*/tsconfig.json',
+              'tsconfig.json',
             ],
           },
           node: { extensions: typescriptExtensions },
