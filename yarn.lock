@@ -346,7 +346,7 @@ __metadata:
   resolution: "@latipun7/commitlintrc@workspace:configs/commitlint"
   dependencies:
     "@commitlint/types": ^15.0.0
-    conventional-changelog-conventionalcommits: ^4.6.1
+    conventional-changelog-conventionalcommits: ^4.6.3
   peerDependencies:
     "@commitlint/cli": ^15.0
     "@commitlint/cz-commitlint": ^15.0
@@ -402,7 +402,7 @@ __metadata:
     "@semantic-release/git": ^10.0.1
     "@types/conventional-changelog-writer": ^4.0.1
     "@types/conventional-commits-parser": ^3.0.2
-    conventional-changelog-conventionalcommits: ^4.6.1
+    conventional-changelog-conventionalcommits: ^4.6.3
     conventional-changelog-writer: ^5.0.0
     conventional-commits-parser: ^3.2.3
     read-pkg: ^5.2.0
@@ -2240,14 +2240,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-conventionalcommits@npm:^4.6.1":
-  version: 4.6.1
-  resolution: "conventional-changelog-conventionalcommits@npm:4.6.1"
+"conventional-changelog-conventionalcommits@npm:^4.6.3":
+  version: 4.6.3
+  resolution: "conventional-changelog-conventionalcommits@npm:4.6.3"
   dependencies:
     compare-func: ^2.0.0
     lodash: ^4.17.15
     q: ^1.5.1
-  checksum: f866616c8f6f21cea005b42792451bfbd16bd4d82872867d1218f67a7993a53c5d87e26d6b483d9252e8022f2e4570e6cf9fa2a409aae5a3d73eea92ccf78b13
+  checksum: 7b8e8a21ebb56f9aaa510e12917b7c609202072c3e71089e0a09630c37c2e8146cdb04364809839b0e3eb55f807fe84d03b2079500b37f6186d505848be5c562
   languageName: node
   linkType: hard
 
