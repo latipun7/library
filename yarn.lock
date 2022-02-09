@@ -403,7 +403,7 @@ __metadata:
     "@types/conventional-changelog-writer": ^4.0.1
     "@types/conventional-commits-parser": ^3.0.2
     conventional-changelog-conventionalcommits: ^4.6.3
-    conventional-changelog-writer: ^5.0.0
+    conventional-changelog-writer: ^5.0.1
     conventional-commits-parser: ^3.2.3
     read-pkg: ^5.2.0
     semantic-release-vsce: ^3.5.0
@@ -2270,6 +2270,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"conventional-changelog-writer@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "conventional-changelog-writer@npm:5.0.1"
+  dependencies:
+    conventional-commits-filter: ^2.0.7
+    dateformat: ^3.0.0
+    handlebars: ^4.7.7
+    json-stringify-safe: ^5.0.1
+    lodash: ^4.17.15
+    meow: ^8.0.0
+    semver: ^6.0.0
+    split: ^1.0.0
+    through2: ^4.0.0
+  bin:
+    conventional-changelog-writer: cli.js
+  checksum: 5c0129db44577f14b1f8de225b62a392a9927ba7fe3422cb21ad71a771b8472bd03badb7c87cb47419913abc3f2ce3759b69f59550cdc6f7a7b0459015b3b44c
+  languageName: node
+  linkType: hard
+
 "conventional-commit-types@npm:^3.0.0":
   version: 3.0.0
   resolution: "conventional-commit-types@npm:3.0.0"
@@ -3885,7 +3904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"handlebars@npm:^4.7.6":
+"handlebars@npm:^4.7.6, handlebars@npm:^4.7.7":
   version: 4.7.7
   resolution: "handlebars@npm:4.7.7"
   dependencies:
