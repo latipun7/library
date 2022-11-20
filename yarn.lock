@@ -372,7 +372,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.6.0
     confusing-browser-globals: ^1.0.11
     eslint-config-prettier: ^8.3.0
-    eslint-find-rules: ^4.0.0
+    eslint-find-rules: ^4.1.0
     eslint-import-resolver-typescript: ^2.5.0
     eslint-plugin-import: ^2.25.3
     eslint-plugin-jest: ^25.3.0
@@ -2906,9 +2906,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-find-rules@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "eslint-find-rules@npm:4.0.0"
+"eslint-find-rules@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "eslint-find-rules@npm:4.1.0"
   dependencies:
     cliui: ^3.2.0
     eslint-rule-documentation: ^1.0.23
@@ -2921,7 +2921,7 @@ __metadata:
   bin:
     eslint-diff-rules: dist/bin/diff.js
     eslint-find-rules: dist/bin/find.js
-  checksum: 20e460716fff699c106043b923f544392288d92f3afb39f6aefe2577c6816f6128d032d848d720e8d449afaa4239a76c8fbb4190ef1836732d0f6d3689c2e865
+  checksum: 031e79fa4a51d4db66b55c696c68efd51bf571a09a0789926087c4a66db9fca442116ad8a79a613f7a44d5d6c9c2ccb5dfd03e676d2f1ae94d456d01cea9e7ad
   languageName: node
   linkType: hard
 
