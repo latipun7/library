@@ -96,18 +96,38 @@
       "groupName": "latipun's packages"
     },
     {
-      "description": "NPM dependencies label and commits",
+      "description": "Rust dependencies label and commits",
+      "matchDatasources": ["crate"],
       "matchDepTypes": ["dependencies"],
-      "labels": ["dependencies", "javascript"],
+      "labels": ["dependencies"],
       "semanticCommitType": "build",
-      "semanticCommitScope": "deps"
+      "semanticCommitScope": "deps",
+      "commitMessageTopic": "Rust crate `{{{depName}}}`"
     },
     {
-      "description": "NPM devDependencies label and commits",
-      "matchDepTypes": ["devDependencies"],
-      "labels": ["dependencies", "javascript"],
+      "description": "Rust dev dependencies label and commits",
+      "matchDatasources": ["crate"],
+      "matchDepTypes": ["dev-dependencies"],
+      "labels": ["dev-dependencies"],
       "semanticCommitType": "build",
-      "semanticCommitScope": "deps-dev"
+      "semanticCommitScope": "deps-dev",
+      "commitMessageTopic": "Rust crate `{{{depName}}}`"
+    },
+    {
+      "description": "Dependencies label and commits",
+      "matchDepTypes": ["dependencies"],
+      "labels": ["dependencies"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps",
+      "commitMessageTopic": "`{{{depName}}}`"
+    },
+    {
+      "description": "Dev dependencies label and commits",
+      "matchDepTypes": ["devDependencies", "dev-dependencies"],
+      "labels": ["dev-dependencies"],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps-dev",
+      "commitMessageTopic": "`{{{depName}}}`"
     },
     {
       "description": "NPM packageManager label and commits",
