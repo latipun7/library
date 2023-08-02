@@ -54,7 +54,7 @@
     "@commitlint/cli": "^15.0",
     "@commitlint/cz-commitlint": "^15.0",
     "commitizen": "^4.2",
-    "inquirer": "^8.2"
+    "inquirer": "^8.2.6"
   },
   "peerDependenciesMeta": {
     "@commitlint/cz-commitlint": {
