@@ -63,7 +63,7 @@
     {
       "description": "Github Actions commits only major",
       "matchDepTypes": ["action"],
-      "extractVersion": "^(?<version>v\\d+\\)",
+      "extractVersion": "^(?<version>v\\d+)",
       "labels": ["dependencies", "github-actions"],
       "semanticCommitType": "ci",
       "semanticCommitScope": "actions",
