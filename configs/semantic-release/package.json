@@ -58,9 +58,9 @@
   },
   "devDependencies": {
     "@types/conventional-changelog-writer": "^4.0.1",
-    "@types/conventional-commits-parser": "^3.0.2",
+    "@types/conventional-commits-parser": "^3.0.6",
     "conventional-changelog-writer": "^5.0.0",
-    "conventional-commits-parser": "^3.2.3"
+    "conventional-commits-parser": "^3.2.4"
   },
   "peerDependencies": {
     "semantic-release": "^18.0",
