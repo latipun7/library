@@ -401,10 +401,10 @@ __metadata:
     "@semantic-release/changelog": ^6.0.1
     "@semantic-release/git": ^10.0.1
     "@types/conventional-changelog-writer": ^4.0.1
-    "@types/conventional-commits-parser": ^3.0.2
+    "@types/conventional-commits-parser": ^3.0.6
     conventional-changelog-conventionalcommits: ^4.6.3
     conventional-changelog-writer: ^5.0.0
-    conventional-commits-parser: ^3.2.3
+    conventional-commits-parser: ^3.2.4
     read-pkg: ^5.2.0
     semantic-release-vsce: ^3.5.0
   peerDependencies:
@@ -953,12 +953,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/conventional-commits-parser@npm:*, @types/conventional-commits-parser@npm:^3.0.2":
+"@types/conventional-commits-parser@npm:*":
   version: 3.0.2
   resolution: "@types/conventional-commits-parser@npm:3.0.2"
   dependencies:
     "@types/node": "*"
   checksum: 886c9c35db7b1f82ff29b405e0de2f0545bc310fd543c7b770cdc02841c1952ae9501f31b6ab97b2d089f7994012ff9986055899683122b0fd6d5343ccaccc4f
+  languageName: node
+  linkType: hard
+
+"@types/conventional-commits-parser@npm:^3.0.6":
+  version: 3.0.6
+  resolution: "@types/conventional-commits-parser@npm:3.0.6"
+  dependencies:
+    "@types/node": "*"
+  checksum: 73d8de80eaccd8628b2cd8636af61209af0d49ff8e3e188dec9d52b39be5d6d3e421708ea2c601a9212e61b205bd77067301fac58aca784569c084eeb6c3d323
   languageName: node
   linkType: hard
 
@@ -2300,6 +2309,22 @@ __metadata:
   bin:
     conventional-commits-parser: cli.js
   checksum: 0f57b5cb7cb359eb49e6807cfd82b27cbe9ac30ec580b20ad7e79575561183110532a6c2e6328ce6c4cd05c01458b9bb781f1f6653b14560f7c509b87b0e9ac7
+  languageName: node
+  linkType: hard
+
+"conventional-commits-parser@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "conventional-commits-parser@npm:3.2.4"
+  dependencies:
+    JSONStream: ^1.0.4
+    is-text-path: ^1.0.1
+    lodash: ^4.17.15
+    meow: ^8.0.0
+    split2: ^3.0.0
+    through2: ^4.0.0
+  bin:
+    conventional-commits-parser: cli.js
+  checksum: 1627ff203bc9586d89e47a7fe63acecf339aba74903b9114e23d28094f79d4e2d6389bf146ae561461dcba8fc42e7bc228165d2b173f15756c43f1d32bc50bfd
   languageName: node
   linkType: hard
 
