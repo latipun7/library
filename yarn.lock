@@ -351,7 +351,7 @@ __metadata:
     "@commitlint/cli": ^15.0
     "@commitlint/cz-commitlint": ^15.0
     commitizen: ^4.2
-    inquirer: ^8.2
+    inquirer: ^8.2.6
   peerDependenciesMeta:
     "@commitlint/cz-commitlint":
       optional: true
@@ -4268,9 +4268,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inquirer@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "inquirer@npm:8.2.0"
+"inquirer@npm:^8.2.6":
+  version: 8.2.6
+  resolution: "inquirer@npm:8.2.6"
   dependencies:
     ansi-escapes: ^4.2.1
     chalk: ^4.1.1
@@ -4282,11 +4282,12 @@ __metadata:
     mute-stream: 0.0.8
     ora: ^5.4.1
     run-async: ^2.4.0
-    rxjs: ^7.2.0
+    rxjs: ^7.5.5
     string-width: ^4.1.0
     strip-ansi: ^6.0.0
     through: ^2.3.6
-  checksum: 861d1a9324ae933b49126b3541d94e4d6a2f2a25411b3f3cc00c34bf1bdab34146362d702cf289efe6d8034900dc5905bcf2ea716092a02b6fc390e5986dd236
+    wrap-ansi: ^6.0.1
+  checksum: 387ffb0a513559cc7414eb42c57556a60e302f820d6960e89d376d092e257a919961cd485a1b4de693dbb5c0de8bc58320bfd6247dfd827a873aa82a4215a240
   languageName: node
   linkType: hard
 
@@ -4996,7 +4997,7 @@ __metadata:
     commitizen: ^4.2.4
     eslint: ^8.4.1
     husky: ^7.0.4
-    inquirer: ^8.2.0
+    inquirer: ^8.2.6
     lint-staged: ^12.1.4
     prettier: ^2.5.1
     semantic-release: ^18.0.1
@@ -7200,12 +7201,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.2.0, rxjs@npm:^7.4.0":
+"rxjs@npm:^7.4.0":
   version: 7.4.0
   resolution: "rxjs@npm:7.4.0"
   dependencies:
     tslib: ~2.1.0
   checksum: 6b33172a760dcad6882fdc836ee8cf1ebe160dd7eaad95c45a12338ffdaa96eb41e48e6c25bbd3d1fdf45075949ff447954bc17a9d01c688558a67967d09c114
+  languageName: node
+  linkType: hard
+
+"rxjs@npm:^7.5.5":
+  version: 7.8.1
+  resolution: "rxjs@npm:7.8.1"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: de4b53db1063e618ec2eca0f7965d9137cabe98cf6be9272efe6c86b47c17b987383df8574861bcced18ebd590764125a901d5506082be84a8b8e364bf05f119
   languageName: node
   linkType: hard
 
@@ -8113,6 +8123,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:^2.1.0":
+  version: 2.6.1
+  resolution: "tslib@npm:2.6.1"
+  checksum: b0d176d176487905b66ae4d5856647df50e37beea7571c53b8d10ba9222c074b81f1410fb91da13debaf2cbc970663609068bdebafa844ea9d69b146527c38fe
+  languageName: node
+  linkType: hard
+
 "tslib@npm:~2.1.0":
   version: 2.1.0
   resolution: "tslib@npm:2.1.0"
@@ -8597,7 +8614,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrap-ansi@npm:^6.2.0":
+"wrap-ansi@npm:^6.0.1, wrap-ansi@npm:^6.2.0":
   version: 6.2.0
   resolution: "wrap-ansi@npm:6.2.0"
   dependencies:
