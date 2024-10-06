@@ -67,7 +67,7 @@
   },
   "devDependencies": {
     "@types/confusing-browser-globals": "^1.0.0",
-    "eslint-find-rules": "^4.0.0"
+    "eslint-find-rules": "^4.2.0"
   },
   "peerDependencies": {
     "eslint": "^8.4",
