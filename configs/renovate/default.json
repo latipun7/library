@@ -42,6 +42,8 @@
   "rangeStrategy": "bump",
   "labels": ["dependencies"],
   "commitMessageTopic": "`{{{depName}}}`",
+  "semanticCommitType": "build",
+  "semanticCommitScope": "deps",
 
   "vulnerabilityAlerts": {
     "enabled": true,
@@ -69,18 +71,17 @@
 
   "packageRules": [
     {
-      "description": "Github Actions commits only major",
-      "matchDatasources": ["github-actions"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "enabled": false
-    },
-    {
-      "description": "Github Actions",
-      "matchDatasources": ["github-actions"],
+      "description": "Github Actions label and commits",
+      "matchDepTypes": ["action"],
       "labels": ["dependencies", "github-actions"],
       "semanticCommitType": "ci",
-      "semanticCommitScope": "actions",
-      "commitMessageTopic": "`{{{depName}}}`"
+      "semanticCommitScope": "actions"
+    },
+    {
+      "description": "Dev dependencies label and commits",
+      "matchDepTypes": ["devDependencies", "dev-dependencies"],
+      "labels": ["dev-dependencies"],
+      "semanticCommitScope": "deps-dev"
     },
     {
       "description": "Group prettier packages",
@@ -108,54 +109,17 @@
       "groupName": "latipun's packages"
     },
     {
-      "description": "Rust dependencies label and commits",
-      "matchDatasources": ["crate"],
-      "matchDepTypes": ["dependencies"],
-      "labels": ["dependencies"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps",
-      "commitMessageTopic": "Rust crate `{{{depName}}}`"
-    },
-    {
-      "description": "Rust dev dependencies label and commits",
-      "matchDatasources": ["crate"],
-      "matchDepTypes": ["dev-dependencies"],
-      "labels": ["dev-dependencies"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps-dev",
-      "commitMessageTopic": "Rust crate `{{{depName}}}`"
-    },
-    {
-      "description": "Dependencies label and commits",
-      "matchDepTypes": ["dependencies"],
-      "labels": ["dependencies"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps",
-      "commitMessageTopic": "`{{{depName}}}`"
-    },
-    {
-      "description": "Dev dependencies label and commits",
-      "matchDepTypes": ["devDependencies", "dev-dependencies"],
-      "labels": ["dev-dependencies"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "deps-dev",
-      "commitMessageTopic": "`{{{depName}}}`"
-    },
-    {
       "description": "NPM packageManager label and commits",
       "matchDepTypes": ["packageManager"],
       "labels": ["dependencies", "package-manager"],
-      "semanticCommitType": "build",
-      "semanticCommitScope": "{{{depName}}}",
-      "commitMessageTopic": "`{{{depName}}}`"
+      "semanticCommitScope": "{{{depName}}}"
     },
     {
       "description": "Docker label and commits",
       "matchDatasources": ["docker"],
       "labels": ["dependencies", "docker"],
-      "semanticCommitType": "build",
       "semanticCommitScope": "docker",
-      "commitMessageTopic": "`{{{depName}}}` Docker tag"
+      "commitMessageTopic": "`{{{depName}}}` docker tag"
     },
     {
       "description": "Disable bump on package.json engines",
