@@ -63,7 +63,7 @@
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-testing-library": "^5.0.1",
-    "read-pkg-up": "^7.0.1"
+    "read-package-up": "^11.0.0"
   },
   "devDependencies": {
     "@types/confusing-browser-globals": "^1.0.0",
