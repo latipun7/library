@@ -3,13 +3,14 @@
   "description": "Nerdy Ninja's default renovate preset 🐱‍👤🌅",
 
   "extends": [
-    "config:base",
+    "config:best-practices",
     ":prImmediately",
     ":semanticCommits",
     ":prHourlyLimitNone",
-    ":dependencyDashboard",
     ":timezone(Asia/Jakarta)",
-    "github>whitesource/merge-confidence:beta"
+    "mergeConfidence:all-badges",
+    "group:definitelyTyped",
+    "group:recommended"
   ],
 
   "ignorePaths": [
@@ -17,11 +18,9 @@
     "**/bower_components/**",
     "**/vendor/**",
     "**/examples/**",
+    "**/__tests__/**",
     "**/test/**",
     "**/tests/**",
-    "**/__tests__/**",
-    "**/fixture/**",
-    "**/fixtures/**",
     "**/__fixtures__/**",
     "**/mock/**",
     "**/mocks/**",
@@ -29,6 +28,15 @@
     "**/dist/**",
     "**/out/**"
   ],
+  "nuget": {
+    "ignorePaths": [
+      "**/node_modules/**",
+      "**/bower_components/**",
+      "**/vendor/**",
+      "**/examples/**",
+      "**/__fixtures__/**"
+    ]
+  },
 
   "prConcurrentLimit": 7,
   "rangeStrategy": "bump",
@@ -62,8 +70,13 @@
   "packageRules": [
     {
       "description": "Github Actions commits only major",
-      "matchDepTypes": ["action"],
-      "extractVersion": "^(?<version>v\\d+)",
+      "matchDatasources": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "enabled": false
+    },
+    {
+      "description": "Github Actions",
+      "matchDatasources": ["github-actions"],
       "labels": ["dependencies", "github-actions"],
       "semanticCommitType": "ci",
       "semanticCommitScope": "actions",
@@ -143,12 +156,6 @@
       "semanticCommitType": "build",
       "semanticCommitScope": "docker",
       "commitMessageTopic": "`{{{depName}}}` Docker tag"
-    },
-    {
-      "description": "Auto merge definitely-typed packages",
-      "matchPackagePrefixes": ["@types/"],
-      "automerge": true,
-      "automergeStrategy": "squash"
     },
     {
       "description": "Disable bump on package.json engines",
