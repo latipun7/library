@@ -40,10 +40,6 @@
 
   "prConcurrentLimit": 7,
   "rangeStrategy": "bump",
-  "labels": ["dependencies"],
-  "commitMessageTopic": "`{{{depName}}}`",
-  "semanticCommitType": "build",
-  "semanticCommitScope": "deps",
 
   "vulnerabilityAlerts": {
     "enabled": true,
@@ -74,13 +70,24 @@
       "description": "Github Actions label and commits",
       "matchDepTypes": ["action"],
       "labels": ["dependencies", "github-actions"],
+      "commitMessageTopic": "`{{{depName}}}` action",
       "semanticCommitType": "ci",
       "semanticCommitScope": "actions"
+    },
+    {
+      "description": "Dependencies label and commits",
+      "matchDepTypes": ["dependencies"],
+      "labels": ["dependencies"],
+      "commitMessageTopic": "`{{{depName}}}`",
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
     },
     {
       "description": "Dev dependencies label and commits",
       "matchDepTypes": ["devDependencies", "dev-dependencies"],
       "labels": ["dev-dependencies"],
+      "commitMessageTopic": "`{{{depName}}}`",
+      "semanticCommitType": "build",
       "semanticCommitScope": "deps-dev"
     },
     {
