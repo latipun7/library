@@ -50,19 +50,19 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^12.0.7",
-    "@typescript-eslint/eslint-plugin": "^5.6.0",
-    "@typescript-eslint/parser": "^5.6.0",
+    "@next/eslint-plugin-next": "^12.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "confusing-browser-globals": "^1.0.11",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-testing-library": "^5.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^25.7.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-testing-library": "^5.11.1",
     "read-pkg-up": "^7.0.1"
   },
   "devDependencies": {
@@ -70,7 +70,7 @@
     "eslint-find-rules": "^4.0.0"
   },
   "peerDependencies": {
-    "eslint": "^8.4",
+    "eslint": "^8.57.1",
     "prettier": "^2.5",
     "typescript": "^4.5"
   },
